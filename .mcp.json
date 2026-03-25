@@ -4,7 +4,8 @@
       "link": "https://mcp.supabase.com/mcp"
     },
     "github": {
-      "link": "https://github.com/github/github-mcp-server.git"
+      "link": "https://github.com/github/github-mcp-server.git",
+      "url": "https://api.githubcopilot.com/mcp/"
     }
   }
 }
