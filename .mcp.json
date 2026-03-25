@@ -1,8 +1,7 @@
 {
   "mcpServers": {
     "supabase": {
-      "type": "http",
-      "url": "https://mcp.supabase.com/mcp"
+      "link": "https://mcp.supabase.com/mcp"
     },
     "github": {
       "link": "https://github.com/github/github-mcp-server.git"
