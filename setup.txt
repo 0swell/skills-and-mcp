@@ -1,0 +1,44 @@
+# ============================================================
+# Claude Code - Skills & MCP Yedek Dosyasi
+# Bu dosyayi yeni PC'de Claude Code'a ver, hepsini kursun.
+# ============================================================
+
+# ======================== SKILLS ============================
+# [SKILL] = Claude Code icinde yerlesik gelen skill (link yok, isimle aktif edilir)
+# [SKILL-PLUGIN] = Marketplace'den yuklenen skill plugin
+
+[SKILL-PLUGIN] agent-sdk-dev@claude-plugins-official
+  # Marketplace: https://github.com/anthropics/claude-plugins-official
+  # Aciklama: Claude Agent SDK gelistirme araci
+
+[SKILL] update-config         # Settings.json yapilandirma
+[SKILL] keybindings-help      # Klavye kisayollari
+[SKILL] simplify              # Kod kalitesi inceleme
+[SKILL] loop                  # Tekrarlanan gorevler
+[SKILL] schedule              # Zamanlanmis agent'lar
+[SKILL] claude-api            # Claude API/SDK ile uygulama gelistirme
+
+# ========================= MCP ==============================
+# [MCP] = Aktif MCP sunucusu (.mcp.json'da tanimli)
+# Her MCP icin hem kullanim URL'si hem repo linki verilmistir.
+
+[MCP] supabase
+  URL: https://mcp.supabase.com/mcp
+  Repo: https://github.com/supabase-community/supabase-mcp.git
+  Tip: http
+
+# ==================== MARKETPLACE ===========================
+# Claude Code marketplace repolari (settings.json > extraKnownMarketplaces)
+
+[MARKETPLACE] claude-plugins-official
+  Repo: https://github.com/anthropics/claude-plugins-official
+
+[MARKETPLACE] anthropic-skills
+  Repo: https://github.com/anthropics/skills
+
+# ============================================================
+# NOTLAR:
+# - .mcp.json dosyasini ~/.mcp.json olarak kopyala
+# - settings.json dosyasini ~/.claude/settings.json olarak kopyala
+# - Yeni MCP eklendiginde bu dosyayi guncelle
+# ============================================================
