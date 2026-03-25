@@ -4,8 +4,15 @@
       "link": "https://mcp.supabase.com/mcp"
     },
     "github": {
-      "link": "https://github.com/github/github-mcp-server.git",
-      "url": "https://api.githubcopilot.com/mcp/"
+      "link": "https://github.com/github/github-mcp-server.git"
+    }
+  },
+  "plugins": {
+    "agent-sdk-dev": {
+      "link": "https://github.com/anthropics/claude-plugins-official"
+    },
+    "superpowers": {
+      "link": "https://github.com/obra/superpowers.git"
     }
   }
 }

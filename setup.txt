@@ -11,6 +11,10 @@
   # Marketplace: https://github.com/anthropics/claude-plugins-official
   # Aciklama: Claude Agent SDK gelistirme araci
 
+[SKILL-PLUGIN] superpowers@claude-plugins-official
+  # Repo: https://github.com/obra/superpowers.git
+  # Aciklama: Agentic skills framework (planlama, debugging vb.)
+
 [SKILL] update-config         # Settings.json yapilandirma
 [SKILL] keybindings-help      # Klavye kisayollari
 [SKILL] simplify              # Kod kalitesi inceleme
