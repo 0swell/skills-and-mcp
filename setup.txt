@@ -19,6 +19,19 @@ loop
 schedule
 claude-api
 
+# ===== SKILLS (3rd party - ~/.claude/commands/) =====
+# Kaynak: https://github.com/alirezarezvani/claude-skills
+focused-fix
+review
+plugin-audit
+security-scan
+seo-auditor
+update-docs
+git/clean
+git/cm
+git/cp
+git/pr
+
 # ===== MARKETPLACE =====
 claude-plugins-official
 anthropic-skills
