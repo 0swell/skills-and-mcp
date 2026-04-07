@@ -32,6 +32,10 @@ git/cm
 git/cp
 git/pr
 
+# ===== SKILLS (3rd party - ~/.claude/skills/) =====
+# Kaynak: https://github.com/AgriciDaniel/claude-ads
+ads (claude-ads) — reklam denetimi, optimizasyon, yaratıcı üretim
+
 # ===== MARKETPLACE =====
 claude-plugins-official
 anthropic-skills
