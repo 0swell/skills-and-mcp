@@ -8,6 +8,9 @@
     },
     "context7": {
       "link": "https://github.com/upstash/context7.git"
+    },
+    "markitdown": {
+      "link": "https://github.com/microsoft/markitdown.git"
     }
   },
   "plugins": {
