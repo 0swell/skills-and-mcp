@@ -37,10 +37,9 @@ git/pr
 # Kaynak: https://github.com/AgriciDaniel/claude-ads
 ads (claude-ads) — reklam denetimi, optimizasyon, yaratıcı üretim
 
-# ===== SKILLS (istege bagli) =====
+# ===== GITHUB REPO (istege bagli) =====
 # Kurulmasi zorunlu degil, ihtiyaca gore eklenebilir
 editor — https://github.com/pascalorg/editor.git
-markitdown — https://github.com/microsoft/markitdown.git
 
 # ===== MARKETPLACE =====
 claude-plugins-official
