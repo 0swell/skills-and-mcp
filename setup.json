@@ -3,6 +3,10 @@
     "type": "skill",
     "link": "https://github.com/zubair-trabzada/geo-seo-claude.git"
   },
+  "seomachine": {
+    "type": "skill",
+    "link": "https://github.com/TheCraigHewitt/seomachine.git"
+  },
   "awesome-design-systems": {
     "type": "skill",
     "link": "https://github.com/alexpate/awesome-design-systems.git"
