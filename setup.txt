@@ -1,46 +1,31 @@
 # Claude Code - Skills & MCP Kurulum
+# Format: isim, type, link
 # Yeni PC'de Claude Code'a ver, hepsini kursun.
-# Linkler ve detaylar .mcp.json'da.
 
-# ===== MCP =====
-supabase
-github
-context7
-markitdown
-
-# ===== PLUGINS =====
-agent-sdk-dev@claude-plugins-official
-superpowers@claude-plugins-official
-
-# ===== SKILLS (yerlesik) =====
-update-config
-keybindings-help
-simplify
-loop
-schedule
-claude-api
-
-# ===== SKILLS (3rd party - ~/.claude/commands/) =====
-# Kaynak: https://github.com/alirezarezvani/claude-skills
-focused-fix
-review
-plugin-audit
-security-scan
-seo-auditor
-update-docs
-git/clean
-git/cm
-git/cp
-git/pr
-
-# ===== SKILLS (3rd party - ~/.claude/skills/) =====
-# Kaynak: https://github.com/AgriciDaniel/claude-ads
-ads (claude-ads) — reklam denetimi, optimizasyon, yaratıcı üretim
-
-# ===== GITHUB REPO (istege bagli) =====
-# Kurulmasi zorunlu degil, ihtiyaca gore eklenebilir
-editor — https://github.com/pascalorg/editor.git
-
-# ===== MARKETPLACE =====
-claude-plugins-official
-anthropic-skills
+awesome-design-systems, skill, https://github.com/alexpate/awesome-design-systems.git
+supabase, mcp,
+github, mcp,
+context7, mcp,
+markitdown, mcp,
+agent-sdk-dev, plugin, claude-plugins-official
+superpowers, plugin, claude-plugins-official
+update-config, skill,
+keybindings-help, skill,
+simplify, skill,
+loop, skill,
+schedule, skill,
+claude-api, skill,
+focused-fix, skill, https://github.com/alirezarezvani/claude-skills
+review, skill, https://github.com/alirezarezvani/claude-skills
+plugin-audit, skill, https://github.com/alirezarezvani/claude-skills
+security-scan, skill, https://github.com/alirezarezvani/claude-skills
+seo-auditor, skill, https://github.com/alirezarezvani/claude-skills
+update-docs, skill, https://github.com/alirezarezvani/claude-skills
+git/clean, skill, https://github.com/alirezarezvani/claude-skills
+git/cm, skill, https://github.com/alirezarezvani/claude-skills
+git/cp, skill, https://github.com/alirezarezvani/claude-skills
+git/pr, skill, https://github.com/alirezarezvani/claude-skills
+ads, skill, https://github.com/AgriciDaniel/claude-ads
+editor, repo, https://github.com/pascalorg/editor.git
+claude-plugins-official, marketplace,
+anthropic-skills, marketplace,
