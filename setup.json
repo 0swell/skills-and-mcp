@@ -1,0 +1,102 @@
+{
+  "awesome-design-systems": {
+    "type": "skill",
+    "link": "https://github.com/alexpate/awesome-design-systems.git"
+  },
+  "supabase": {
+    "type": "mcp",
+    "link": "https://mcp.supabase.com/mcp"
+  },
+  "github": {
+    "type": "mcp",
+    "link": "https://github.com/github/github-mcp-server.git"
+  },
+  "context7": {
+    "type": "mcp",
+    "link": "https://github.com/upstash/context7.git"
+  },
+  "markitdown": {
+    "type": "mcp",
+    "link": "https://github.com/microsoft/markitdown.git"
+  },
+  "agent-sdk-dev": {
+    "type": "plugin",
+    "link": "https://github.com/anthropics/claude-plugins-official"
+  },
+  "superpowers": {
+    "type": "plugin",
+    "link": "https://github.com/obra/superpowers.git"
+  },
+  "update-config": {
+    "type": "skill"
+  },
+  "keybindings-help": {
+    "type": "skill"
+  },
+  "simplify": {
+    "type": "skill"
+  },
+  "loop": {
+    "type": "skill"
+  },
+  "schedule": {
+    "type": "skill"
+  },
+  "claude-api": {
+    "type": "skill"
+  },
+  "focused-fix": {
+    "type": "skill",
+    "link": "https://github.com/alirezarezvani/claude-skills"
+  },
+  "review": {
+    "type": "skill",
+    "link": "https://github.com/alirezarezvani/claude-skills"
+  },
+  "plugin-audit": {
+    "type": "skill",
+    "link": "https://github.com/alirezarezvani/claude-skills"
+  },
+  "security-scan": {
+    "type": "skill",
+    "link": "https://github.com/alirezarezvani/claude-skills"
+  },
+  "seo-auditor": {
+    "type": "skill",
+    "link": "https://github.com/alirezarezvani/claude-skills"
+  },
+  "update-docs": {
+    "type": "skill",
+    "link": "https://github.com/alirezarezvani/claude-skills"
+  },
+  "git/clean": {
+    "type": "skill",
+    "link": "https://github.com/alirezarezvani/claude-skills"
+  },
+  "git/cm": {
+    "type": "skill",
+    "link": "https://github.com/alirezarezvani/claude-skills"
+  },
+  "git/cp": {
+    "type": "skill",
+    "link": "https://github.com/alirezarezvani/claude-skills"
+  },
+  "git/pr": {
+    "type": "skill",
+    "link": "https://github.com/alirezarezvani/claude-skills"
+  },
+  "ads": {
+    "type": "skill",
+    "link": "https://github.com/AgriciDaniel/claude-ads"
+  },
+  "editor": {
+    "type": "repo",
+    "link": "https://github.com/pascalorg/editor.git"
+  },
+  "claude-plugins-official": {
+    "type": "marketplace"
+  },
+  "anthropic-skills": {
+    "type": "marketplace"
+  }
+}
