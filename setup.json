@@ -1,4 +1,8 @@
 {
+  "geo-seo-claude": {
+    "type": "skill",
+    "link": "https://github.com/zubair-trabzada/geo-seo-claude.git"
+  },
   "awesome-design-systems": {
     "type": "skill",
     "link": "https://github.com/alexpate/awesome-design-systems.git"
