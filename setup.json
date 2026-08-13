@@ -27,6 +27,14 @@
     "type": "mcp",
     "link": "https://github.com/microsoft/markitdown.git"
   },
+  "stitch": {
+    "type": "mcp",
+    "link": "https://stitch.googleapis.com/mcp"
+  },
+  "nanobanana": {
+    "type": "mcp",
+    "link": "https://github.com/YCSE/nanobanana-mcp"
+  },
   "agent-sdk-dev": {
     "type": "plugin",
     "link": "https://github.com/anthropics/claude-plugins-official"
@@ -34,6 +42,10 @@
   "superpowers": {
     "type": "plugin",
     "link": "https://github.com/obra/superpowers.git"
+  },
+  "ui-ux-pro-max": {
+    "type": "plugin",
+    "link": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git"
   },
   "update-config": {
     "type": "skill"
@@ -106,5 +118,9 @@
   },
   "anthropic-skills": {
     "type": "marketplace"
+  },
+  "ui-ux-pro-max-skill": {
+    "type": "marketplace",
+    "link": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git"
   }
 }
