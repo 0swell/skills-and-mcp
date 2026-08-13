@@ -35,6 +35,10 @@
     "type": "mcp",
     "link": "https://github.com/YCSE/nanobanana-mcp"
   },
+  "21st": {
+    "type": "mcp",
+    "link": "https://21st.dev/api/mcp"
+  },
   "agent-sdk-dev": {
     "type": "plugin",
     "link": "https://github.com/anthropics/claude-plugins-official"

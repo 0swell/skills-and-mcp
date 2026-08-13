@@ -25,6 +25,7 @@ Claude Code'a dış servislere erişim kazandıran sunucular.
 |-----|--------------|--------|-------|
 | **stitch** | Prompt'tan UI tasarımı üretir (Google Stitch). Ekran, varyant, tasarım sistemi. | [stitch.googleapis.com](https://stitch.withgoogle.com/docs/mcp/setup) | Ücretsiz — ~350 üretim/ay |
 | **nanobanana** | Gemini ile görsel üretme ve düzenleme (Nano Banana 2). | [YCSE/nanobanana-mcp](https://github.com/YCSE/nanobanana-mcp) | Flash modeli ücretsiz kotada |
+| **21st** | shadcn/ui + Tailwind component üretir, hazır component kütüphanesinden çeker. | [21st.dev](https://21st.dev) | Free plan: 100 kredi/ay |
 | **supabase** | Veritabanı, auth ve storage yönetimi. | [mcp.supabase.com](https://mcp.supabase.com/mcp) | Ücretsiz plan var |
 | **github** | Repo, issue, PR işlemleri. | [github/github-mcp-server](https://github.com/github/github-mcp-server) | Ücretsiz |
 | **context7** | Kütüphanelerin güncel dokümanlarını çeker — eski API bilgisi sorununu çözer. | [upstash/context7](https://github.com/upstash/context7) | Ücretsiz |
@@ -122,6 +123,7 @@ claude plugin install ui-ux-pro-max@ui-ux-pro-max-skill
 ## Maliyet Notları
 
 - **Ücretsiz kullanılanlar:** stitch (350 üretim/ay), nanobanana (Flash modeli), context7, markitdown, github
+- **21st** free planında 100 kredi/ay veriyor — birkaç component üretimine denk geliyor, hızlı tükeniyor.
 - **nanobanana Pro modeli** (`gemini-3-pro-image-preview`) billing gerektirir — görsel başına ücretli. Varsayılan Flash'ta bırakmakta fayda var.
 - **Gemini uygulaması aboneliği API'yi kapsamaz.** MCP'ler API anahtarı üzerinden çalışır, abonelik oradan geçmez.
 - **fal.ai** denendi, tamamen kullandıkça öde olduğu için kaldırıldı.
