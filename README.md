@@ -77,13 +77,28 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
 - **[meta-ads](https://github.com/pipeboard-co/meta-ads-mcp)** `MCP`: Facebook + Instagram reklamlarını sohbetten yönet. Kampanya aç, bütçe değiştir, performansı analiz et. *(Pipeboard, free plan)*
 - **[`ads`](https://github.com/AgriciDaniel/claude-ads)** `Skill`: Google, Meta, LinkedIn, TikTok reklam hesaplarına 225+ kontrollü denetim. Boşa giden bütçeyi bulur.
-- **[`ig-reel`](https://github.com/Jakeschincariol/instagram-agent-skill)** `Skill`: Ham fikirden çekime hazır Reel. 26 skorlanmış hook formülü, script, ekran yazısı, zamanlı beat sheet.
-- **`ig-viral`** `Skill`: Nişindeki şu an patlayan reel'leri bulur, hook'unu çözer, sana swipe file çıkarır.
-- **`ig-caption` · `ig-carousel` · `ig-story`** `Skill`: "... devamı"ndan sağ çıkan caption, kaydırtan carousel, DM'e taşıyan story dizisi.
-- **`ig-plan` · `ig-repurpose`** `Skill`: Haftalık içerik takvimi; tek YouTube videosundan bir haftalık reel + carousel.
-- **`ig-profile` · `ig-audit`** `Skill`: Profilini 100 üzerinden puanlar, insights'ını okur: ne tuttu, neden battı.
-- **`ig-dm` · `ig-comment` · `ig-reply`** `Skill`: Cevap alan DM, bot gibi olmayan yorum, hater'dan lead'e öncelikli cevap.
-- **`ig-human`** `Skill`: Taslaktaki AI izini siler; em dash, slop kelimeler, görünmez karakterler gider.
+- **[Instagram Agent Skills](https://github.com/Jakeschincariol/instagram-agent-skill)** `Skill`: Instagram hesabını baştan sona yöneten 13 skill. Viral hook'lu Reel'den DM'e kadar her şey; API anahtarı yok, hesap bağlamak yok.
+
+  <details>
+  <summary>13 skill'in içinde ne var?</summary>
+
+  | Skill | Ne yapar |
+  |-------|----------|
+  | `ig-reel` | Ham fikirden çekime hazır Reel; 26 skorlanmış hook formülü, script, beat sheet |
+  | `ig-viral` | Nişinde şu an patlayan reel'leri bulur, hook'unu çözer, swipe file çıkarır |
+  | `ig-caption` | "... devamı"ndan sağ çıkan, lint'li, 3 hashtag'li caption |
+  | `ig-carousel` | Kaydırtan kapak, slayt slayt metin, 1080x1350 dosyalar |
+  | `ig-story` | Günün story dizisi; hangi sticker nerede, DM'e nasıl taşınır |
+  | `ig-plan` | Haftalık içerik takvimi ve etkileşim listesi |
+  | `ig-repurpose` | Tek YouTube videosu ya da podcast'ten bir haftalık reel + carousel |
+  | `ig-profile` | Profili 100 üzerinden puanlar, bio/highlight/grid'i yeniden yazar |
+  | `ig-audit` | Insights'ı okur: ne tuttu, neden battı, neyi bırakmalı |
+  | `ig-dm` | Cevap alan DM; ilk mesaj, collab pitch, iki takip |
+  | `ig-comment` | Bot gibi değil, fikri olan biri gibi yorum |
+  | `ig-reply` | Kendi yorumlarına öncelik sırasıyla cevap; hater'dan lead'e |
+  | `ig-human` | Taslaktaki AI izini siler; em dash, slop kelime, görünmez karakter |
+
+  </details>
 
 ## 🤖 Claude İçi İşlevsel
 
