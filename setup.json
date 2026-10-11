@@ -1,4 +1,79 @@
 {
+  "Dijital Pazarlama": {
+    "SEO · GEO · AEO": {
+      "geo-optimizer": {
+        "type": "mcp+skill",
+        "description": "ChatGPT, Perplexity, AI Overviews sitene atıf yapıyor mu? Tek komutla GEO/AEO karnesi.",
+        "link": "https://github.com/Auriti-Labs/geo-optimizer-skill",
+        "install": "uv tool install --python 3.13 \"geo-optimizer-skill[mcp]\" --with \"mcp<2\" && claude mcp add geo-optimizer -s user -- geo-mcp (skill: SKILL.md + references/ elle ~/.claude/skills/geo-optimizer/)"
+      },
+      "gsc": {
+        "type": "mcp",
+        "description": "Search Console verisi sohbette; hangi sorgu geliyor, hangi sayfa düşüyor, gerçek veriyle.",
+        "link": "https://github.com/AminForou/mcp-gsc",
+        "install": "claude mcp add gsc -s user -e GSC_OAUTH_CLIENT_SECRETS_FILE=/path/to/client_secrets.json -- uvx mcp-search-console"
+      },
+      "openseo": {
+        "type": "mcp+skill",
+        "description": "Semrush/Ahrefs'in açık kaynak alternatifi; kelime, rakip, backlink, YZ görünürlüğü (DataForSEO ücretli).",
+        "link": "https://github.com/every-app/open-seo",
+        "install": "claude mcp add --transport http openseo -s user https://app.openseo.so/mcp && npx skills add every-app/open-seo -g -a claude-code -y --skill seo-audit keyword-research keyword-clustering competitor-analysis competitive-landscape link-prospecting local-seo ai-visibility-audit ai-prompt-research seo-report seo-coach seo-project-setup setup-openseo"
+      },
+      "seo-auditor": {
+        "type": "skill",
+        "description": "Meta etiket, okunabilirlik, kırık link, sitemap; tek taramada SEO karnesi.",
+        "link": "https://github.com/alirezarezvani/claude-skills"
+      },
+      "geo-seo-claude": {
+        "type": "skill",
+        "description": "Google'da değil, ChatGPT/Perplexity cevaplarında da çık; GEO optimizasyonu.",
+        "link": "https://github.com/zubair-trabzada/geo-seo-claude.git"
+      },
+      "seomachine": {
+        "type": "skill",
+        "description": "Anahtar kelimeden yayına SEO içerik fabrikası.",
+        "link": "https://github.com/TheCraigHewitt/seomachine.git"
+      }
+    },
+    "Reklam & Sosyal Medya": {
+      "meta-ads": {
+        "type": "mcp",
+        "description": "Facebook + Instagram reklamlarını sohbetten yönet: kampanya aç, bütçe değiştir, analiz et.",
+        "link": "https://meta-ads.mcp.pipeboard.co/",
+        "install": "claude mcp add --transport http meta-ads -s user https://meta-ads.mcp.pipeboard.co/"
+      },
+      "ads": {
+        "type": "skill",
+        "description": "Google, Meta, LinkedIn, TikTok reklamlarına 225+ kontrollü denetim; boşa giden bütçeyi bulur.",
+        "link": "https://github.com/AgriciDaniel/claude-ads"
+      },
+      "instagram-agent": {
+        "type": "skill",
+        "description": "Instagram hesabını yöneten 13 skill: viral hook'lu Reel, caption lint, carousel, story, DM, profil skoru.",
+        "link": "https://github.com/Jakeschincariol/instagram-agent-skill",
+        "install": "npx skills add Jakeschincariol/instagram-agent-skill -g -a claude-code -y"
+      }
+    }
+  },
+  "Video": {
+    "remotion-documentation": {
+      "type": "mcp",
+      "description": "Remotion'ın resmi doküman MCP'si; video kodu yazarken API'yi tahmin etme, sor.",
+      "link": "https://www.npmjs.com/package/@remotion/mcp",
+      "install": "claude mcp add remotion-documentation -s user -- npx -y @remotion/mcp@latest"
+    },
+    "remotion-skills": {
+      "type": "skill",
+      "description": "React ile video yap: Remotion ekibinin 12 resmi skill'i (create, render, captions, maps...).",
+      "link": "https://github.com/remotion-dev/skills",
+      "install": "npx skills add remotion-dev/skills -g -a claude-code -y"
+    },
+    "remotion": {
+      "type": "repo",
+      "description": "Remotion framework'ü; global kurulmaz, projede `npx create-video@latest`.",
+      "link": "https://github.com/remotion-dev/remotion"
+    }
+  },
   "Tasarım & UI": {
     "ui-ux-pro-max": {
       "type": "plugin",
@@ -34,25 +109,6 @@
       "type": "mcp",
       "description": "Flux, Recraft, Kling gibi yüzlerce görsel/video modeli tek API'de. Ücretli, tamamen kullandıkça öde.",
       "link": "https://fal.ai"
-    }
-  },
-  "Video": {
-    "remotion-documentation": {
-      "type": "mcp",
-      "description": "Remotion'ın resmi doküman MCP'si; video kodu yazarken API'yi tahmin etme, sor.",
-      "link": "https://www.npmjs.com/package/@remotion/mcp",
-      "install": "claude mcp add remotion-documentation -s user -- npx -y @remotion/mcp@latest"
-    },
-    "remotion-skills": {
-      "type": "skill",
-      "description": "React ile video yap: Remotion ekibinin 12 resmi skill'i (create, render, captions, maps...).",
-      "link": "https://github.com/remotion-dev/skills",
-      "install": "npx skills add remotion-dev/skills -g -a claude-code -y"
-    },
-    "remotion": {
-      "type": "repo",
-      "description": "Remotion framework'ü; global kurulmaz, projede `npx create-video@latest`.",
-      "link": "https://github.com/remotion-dev/remotion"
     }
   },
   "Geliştirme & Kod Kalitesi": {
@@ -135,62 +191,6 @@
       "type": "mcp",
       "description": "PDF, Word, Excel, HTML ne verirsen temiz Markdown'a çevirir.",
       "link": "https://github.com/microsoft/markitdown.git"
-    }
-  },
-  "Dijital Pazarlama": {
-    "SEO · GEO · AEO": {
-      "geo-optimizer": {
-        "type": "mcp+skill",
-        "description": "ChatGPT, Perplexity, AI Overviews sitene atıf yapıyor mu? Tek komutla GEO/AEO karnesi.",
-        "link": "https://github.com/Auriti-Labs/geo-optimizer-skill",
-        "install": "uv tool install --python 3.13 \"geo-optimizer-skill[mcp]\" --with \"mcp<2\" && claude mcp add geo-optimizer -s user -- geo-mcp (skill: SKILL.md + references/ elle ~/.claude/skills/geo-optimizer/)"
-      },
-      "gsc": {
-        "type": "mcp",
-        "description": "Search Console verisi sohbette; hangi sorgu geliyor, hangi sayfa düşüyor, gerçek veriyle.",
-        "link": "https://github.com/AminForou/mcp-gsc",
-        "install": "claude mcp add gsc -s user -e GSC_OAUTH_CLIENT_SECRETS_FILE=/path/to/client_secrets.json -- uvx mcp-search-console"
-      },
-      "openseo": {
-        "type": "mcp+skill",
-        "description": "Semrush/Ahrefs'in açık kaynak alternatifi; kelime, rakip, backlink, YZ görünürlüğü (DataForSEO ücretli).",
-        "link": "https://github.com/every-app/open-seo",
-        "install": "claude mcp add --transport http openseo -s user https://app.openseo.so/mcp && npx skills add every-app/open-seo -g -a claude-code -y --skill seo-audit keyword-research keyword-clustering competitor-analysis competitive-landscape link-prospecting local-seo ai-visibility-audit ai-prompt-research seo-report seo-coach seo-project-setup setup-openseo"
-      },
-      "seo-auditor": {
-        "type": "skill",
-        "description": "Meta etiket, okunabilirlik, kırık link, sitemap; tek taramada SEO karnesi.",
-        "link": "https://github.com/alirezarezvani/claude-skills"
-      },
-      "geo-seo-claude": {
-        "type": "skill",
-        "description": "Google'da değil, ChatGPT/Perplexity cevaplarında da çık; GEO optimizasyonu.",
-        "link": "https://github.com/zubair-trabzada/geo-seo-claude.git"
-      },
-      "seomachine": {
-        "type": "skill",
-        "description": "Anahtar kelimeden yayına SEO içerik fabrikası.",
-        "link": "https://github.com/TheCraigHewitt/seomachine.git"
-      }
-    },
-    "Reklam & Sosyal Medya": {
-      "meta-ads": {
-        "type": "mcp",
-        "description": "Facebook + Instagram reklamlarını sohbetten yönet: kampanya aç, bütçe değiştir, analiz et.",
-        "link": "https://meta-ads.mcp.pipeboard.co/",
-        "install": "claude mcp add --transport http meta-ads -s user https://meta-ads.mcp.pipeboard.co/"
-      },
-      "ads": {
-        "type": "skill",
-        "description": "Google, Meta, LinkedIn, TikTok reklamlarına 225+ kontrollü denetim; boşa giden bütçeyi bulur.",
-        "link": "https://github.com/AgriciDaniel/claude-ads"
-      },
-      "instagram-agent": {
-        "type": "skill",
-        "description": "Instagram hesabını yöneten 13 skill: viral hook'lu Reel, caption lint, carousel, story, DM, profil skoru.",
-        "link": "https://github.com/Jakeschincariol/instagram-agent-skill",
-        "install": "npx skills add Jakeschincariol/instagram-agent-skill -g -a claude-code -y"
-      }
     }
   },
   "Claude İçi İşlevsel": {
