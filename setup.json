@@ -29,6 +29,11 @@
       "type": "repo",
       "description": "Pascal editor reposu (referans).",
       "link": "https://github.com/pascalorg/editor.git"
+    },
+    "fal-ai": {
+      "type": "mcp",
+      "description": "Flux, Recraft, Kling gibi yüzlerce görsel/video modeli tek API'de. Ücretli, tamamen kullandıkça öde.",
+      "link": "https://fal.ai"
     }
   },
   "Video": {

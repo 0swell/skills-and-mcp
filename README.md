@@ -6,7 +6,7 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
 ---
 
-> Etiketler: `MCP` dış servise bağlanır · `Skill` Claude'a iş akışı öğretir · `Plugin` skill/agent paketi
+> Etiketler: `MCP` dış servise bağlanır · `Skill` Claude'a iş akışı öğretir · `Plugin` skill/agent paketi · `Yerleşik` Claude Code ile gelir
 
 ## 🎨 Tasarım & UI
 
@@ -15,6 +15,7 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 - **[21st](https://21st.dev)** `MCP`: shadcn/ui + Tailwind component'leri tek prompt'la. Hazır kütüphaneden çek, kodu direkt projene düşsün. *(100 kredi/ay, hızlı biter)*
 - **[nanobanana](https://github.com/YCSE/nanobanana-mcp)** `MCP`: Gemini'nin görsel motoru terminalinde. Logo, mockup, asset üret ya da mevcut görseli düzenle. *(Flash ücretsiz kotada)*
 - **[awesome-design-systems](https://github.com/alexpate/awesome-design-systems)** `Skill`: Dünyanın en iyi tasarım sistemleri tek yerde; ilham ve referans.
+- **[fal.ai](https://fal.ai)** `MCP`: Flux, Recraft, Kling gibi yüzlerce görsel ve video modeli tek API'de. Nanobanana yetmediğinde profesyonel kalite. *(💰 Ücretli, tamamen kullandıkça öde)*
 
 ## 🎬 Video
 
@@ -44,14 +45,42 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 ## 🛠️ Geliştirme & Kod Kalitesi
 
 - **[superpowers](https://github.com/obra/superpowers)** `Plugin`: Claude'a kıdemli mühendis disiplini aşılar. Brainstorm, plan, TDD, sistematik debug; rastgele kod yazmaya son.
-- **[`ponytail`](https://github.com/DietrichGebert/ponytail)** `Skill`: Odadaki en tembel kıdemli dev gibi düşünür. En iyi kod hiç yazılmayan koddur; YAGNI, stdlib, tek satır.
-- **`ponytail-review` · `ponytail-audit`** `Skill`: Değişikliği ya da tüm repoyu sade dille inceler: bug, güvenlik, yük altında ne kırılır, ne silinebilir.
-- **`ponytail-debt` · `ponytail-gain` · `ponytail-help`** `Skill`: Ertelenen kısayolların borç defteri, ölçülmüş tasarruf ve hızlı referans.
-- **[`focused-fix`](https://github.com/alirezarezvani/claude-skills)** `Skill`: Bozuk modülü 5 fazlı protokolle onarır; yama değil kök neden.
-- **[`review` · `security-scan`](https://github.com/alirezarezvani/claude-skills)** `Skill`: Push'tan önce son kapı; hatayı ve sızan anahtarı CI'dan önce sen gör.
-- **[`git/cm` · `git/cp` · `git/pr` · `git/clean`](https://github.com/alirezarezvani/claude-skills)** `Skill`: Conventional commit, push, PR, branch temizliği; git ritüeli tek komut.
-- **[`update-docs` · `plugin-audit`](https://github.com/alirezarezvani/claude-skills)** `Skill`: Kod değişti, doküman da güncellensin; skill/plugin dizinine 8 fazlı denetim.
-- **`simplify`** `Skill`: Değişen kodu tarar, tekrarı ve gereksiz karmaşayı budar. Kod incelir, okunur olur.
+- **[Ponytail](https://github.com/DietrichGebert/ponytail)** `Skill`: Odadaki en tembel kıdemli dev gibi düşünür. En iyi kod hiç yazılmayan koddur; YAGNI, stdlib, tek satır.
+
+  <details>
+  <summary>6 skill'in içinde ne var?</summary>
+
+  | Skill | Ne yapar |
+  |-------|----------|
+  | `ponytail` | En küçük değişiklikle tam çözüm; lite / full / ultra seviyeleri |
+  | `ponytail-review` | Değişikliği sade dille inceler: mantık, güvenlik, yük, test, gereksiz satır |
+  | `ponytail-audit` | Tüm repoya kalite denetimi; bug, güvenlik açığı, silinecek kod |
+  | `ponytail-debt` | Ertelenen `shortcut:` yorumlarının borç defteri |
+  | `ponytail-gain` | Benchmark'tan ölçülmüş tasarruf (kod, maliyet, hız) |
+  | `ponytail-help` | Seviye, skill ve komutlar için hızlı referans |
+
+  </details>
+
+- **[claude-skills](https://github.com/alirezarezvani/claude-skills)** `Skill`: Push öncesi kalite kapıları ve git ritüeli tek komutta. Hata CI'a, sızan anahtar repoya ulaşmadan yakalanır.
+
+  <details>
+  <summary>9 skill'in içinde ne var?</summary>
+
+  | Skill | Ne yapar |
+  |-------|----------|
+  | `focused-fix` | Bozuk modülü 5 fazlı protokolle onarır; yama değil kök neden |
+  | `review` | Push öncesi yerel inceleme kapısı |
+  | `security-scan` | Push öncesi güvenlik taraması |
+  | `git/cm` | Conventional Commit oluşturur |
+  | `git/cp` | Stage, commit, push tek komut |
+  | `git/pr` | Mevcut branch'ten PR açar |
+  | `git/clean` | Merge edilmiş branch'leri temizler |
+  | `update-docs` | Kod değişince dokümanları günceller |
+  | `plugin-audit` | Skill/plugin dizinine 8 fazlı denetim |
+
+  </details>
+
+- **`simplify`** `Yerleşik`: Değişen kodu tarar, tekrarı ve gereksiz karmaşayı budar. Kod incelir, okunur olur.
 - **[github](https://github.com/github/github-mcp-server)** `MCP`: Repo, issue ve PR'lar Claude'un elinde. Tarayıcıya geçmeden review, merge, triage. *(Ücretsiz)*
 - **[context7](https://github.com/upstash/context7)** `MCP`: Eskimiş API bilgisine son. Kütüphanenin bugünkü dokümanını anında çeker, halüsinasyon kodu bitirir. *(Ücretsiz)*
 - **[supabase](https://mcp.supabase.com/mcp)** `MCP`: Veritabanı, auth ve storage'ı sohbetten yönet. Dashboard'a girmeden tablo kur, sorgu at. *(Ücretsiz plan)*
@@ -63,12 +92,29 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
 - **[geo-optimizer](https://github.com/Auriti-Labs/geo-optimizer-skill)** `MCP` `Skill`: ChatGPT, Perplexity, AI Overviews sitene atıf yapıyor mu? Princeton'ın 47 yöntemiyle GEO/AEO karnesi; llms.txt, bot erişimi, schema. *(Ücretsiz)*
 - **[gsc](https://github.com/AminForou/mcp-gsc)** `MCP`: Search Console verisi sohbette. Hangi sorgu geliyor, hangi sayfa düşüyor, indeksleme neden takıldı; tahmin değil gerçek veri. *(Ücretsiz, Google OAuth)*
-- **[openseo](https://github.com/every-app/open-seo)** `MCP`: Semrush/Ahrefs'in açık kaynak alternatifi. Kelime, rakip, backlink ve YZ görünürlüğü verisi agent'ının elinde. *(DataForSEO kullandıkça öde)*
-- **[`seo-audit` · `keyword-research` · `keyword-clustering`](https://github.com/every-app/open-seo)** `Skill`: Veriye dayalı SEO denetimi, kelime fırsatları ve sayfa-kelime haritası; cannibalization'a son.
-- **[`competitor-analysis` · `competitive-landscape` · `link-prospecting`](https://github.com/every-app/open-seo)** `Skill`: Rakibin trafiğini nereden aldığını çöz, boşluğu bul, backlink adaylarına outreach taslağı hazırla.
-- **[`ai-visibility-audit` · `ai-prompt-research`](https://github.com/every-app/open-seo)** `Skill`: YZ neden rakibini öneriyor? İnsanların ChatGPT'ye ne sorduğunu ve kimin alıntılandığını gör.
-- **[`local-seo`](https://github.com/every-app/open-seo)** `Skill`: Google İşletme Profili denetimi ve Maps görünürlük haritası.
-- **[`seo-report` · `seo-coach` · `seo-project-setup` · `setup-openseo`](https://github.com/every-app/open-seo)** `Skill`: Tek sayfalık HTML rapor, rehber mod ve OpenSEO kurulum/proje bağlamı.
+- **[OpenSEO](https://github.com/every-app/open-seo)** `MCP` `Skill`: Semrush/Ahrefs'in açık kaynak alternatifi. Kelime, rakip, backlink ve YZ görünürlüğü verisi agent'ının elinde. *(DataForSEO kullandıkça öde)*
+
+  <details>
+  <summary>13 skill'in içinde ne var?</summary>
+
+  | Skill | Ne yapar |
+  |-------|----------|
+  | `seo-audit` | Veriye dayalı site denetimi; trafiği en çok büyütecek birkaç değişiklik |
+  | `keyword-research` | Kelime fırsatları, metrikler, SERP analizi |
+  | `keyword-clustering` | Kelimeleri niyete göre kümeler, sayfalara eşler; cannibalization'a son |
+  | `competitor-analysis` | Tek rakibin organik ayak izi, kelimeleri, backlink'leri |
+  | `competitive-landscape` | Pazar liderleri, kazanan içerik temaları, stratejik boşluklar |
+  | `link-prospecting` | Backlink adayları, iletişim yolu, outreach taslağı |
+  | `ai-visibility-audit` | Markan YZ cevaplarında nasıl görünüyor; alıntılanmak için ne yapmalı |
+  | `ai-prompt-research` | İnsanlar ChatGPT'ye ne soruyor, kim alıntılanıyor |
+  | `local-seo` | Google İşletme Profili denetimi, Maps görünürlük haritası |
+  | `seo-report` | Tek sayfalık HTML rapor |
+  | `seo-coach` | Rehber mod; sıradaki adımı önerir |
+  | `seo-project-setup` | Proje bağlamı: hedef, rakip, ana sayfalar, Search Console |
+  | `setup-openseo` | OpenSEO plugin, MCP ve skill kurulumu |
+
+  </details>
+
 - **[`seo-auditor`](https://github.com/alirezarezvani/claude-skills)** `Skill`: Meta etiket, okunabilirlik, kırık link, sitemap; tek taramada SEO karnesi.
 - **[`geo-seo-claude`](https://github.com/zubair-trabzada/geo-seo-claude)** `Skill`: Google'da değil, ChatGPT/Perplexity cevaplarında da çık; GEO optimizasyonu.
 - **[`seomachine`](https://github.com/TheCraigHewitt/seomachine)** `Skill`: Anahtar kelimeden yayına SEO içerik fabrikası.
@@ -104,8 +150,19 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
 ### Token & Model Yönetimi
 
-- **[omniroute](https://github.com/diegosouzapw/OmniRoute)** `MCP`: 370+ sağlayıcı, 150+ ücretsiz tier tek endpoint'te. Kota biterse otomatik başka modele geçer, kodlama hiç durmaz. *(MIT, ücretsiz)*
-- **`omni-*` · `cli-*` · `config-codex-cli`** `Skill`: OmniRoute'un tamamı Claude'un elinde (44 skill): sağlayıcı, routing, bütçe, cache, sıkıştırma, A2A; API'den de terminalden de.
+- **[OmniRoute](https://github.com/diegosouzapw/OmniRoute)** `MCP` `Skill`: 370+ sağlayıcı, 150+ ücretsiz tier tek endpoint'te. Kota biterse otomatik başka modele geçer, kodlama hiç durmaz. *(MIT, ücretsiz)*
+
+  <details>
+  <summary>45 skill'in içinde ne var?</summary>
+
+  | Skill | Ne yapar |
+  |-------|----------|
+  | `omni-*` (25) | API tarafı: sağlayıcı, routing combo, bütçe, cache, sıkıştırma, MCP, A2A, webhook, tunnel, yedek |
+  | `cli-*` (19) | Aynısı terminalden: sunucuyu başlat, sağlayıcı ekle, maliyeti izle, eval koştur |
+  | `config-codex-cli` | Codex CLI'yi OmniRoute'a bağlar; config ve 7 profil hazır |
+
+  </details>
+
 - **[headroom](https://github.com/headroomlabs-ai/headroom)** `MCP`: Tool çıktısını, log'ları, JSON'u LLM'e gitmeden sıkıştırır. Aynı cevap, %20-95 daha az token. *(Ücretsiz)*
 
 ### Prompt & Agent
@@ -113,13 +170,23 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 - **[`prompt-master`](https://github.com/nidhinjs/prompt-master)** `Skill`: Her AI aracı için nokta atışı prompt; Midjourney'den Cursor'a. Boşa kredi yakma.
 - **[`task-observer`](https://github.com/rebelytics/one-skill-to-rule-them-all)** `Skill`: "One Skill to Rule Them All". Çalışmanı izler, düzeltmelerini yakalar, diğer skill'lerini senin onayınla geliştirir.
 - **[agent-sdk-dev](https://github.com/anthropics/claude-plugins-official)** `Plugin`: Kendi Claude agent'ını dakikalar içinde ayağa kaldır ve best practice'e göre doğrulat.
-- **`claude-api`** `Skill`: Model ID, fiyat, streaming, tool use. Claude ile uygulama yazarken ezbere değil, doğru bilgiyle.
+- **`claude-api`** `Yerleşik`: Model ID, fiyat, streaming, tool use. Claude ile uygulama yazarken ezbere değil, doğru bilgiyle.
 
 ### Ayar & Otomasyon
 
-- **`update-config`** `Skill`: "Bundan sonra her seferinde..." de, hook'u ve izni o yazsın. settings.json'a elle dokunma.
-- **`loop` · `schedule`** `Skill`: Komutu aralıklarla tekrar çalıştır ya da bulutta cron'la agent koştur; sen uyurken rapor hazır.
-- **`keybindings-help`** `Skill`: Kısayolları kendi parmaklarına göre yeniden bağla, chord'lar dahil.
+- **[Claude Code yerleşik skill'leri](https://code.claude.com/docs/en/skills)** `Yerleşik`: Kurulum gerektirmez, Claude Code ile gelir. Ayarı, zamanlamayı ve kısayolları sohbetten yönet.
+
+  <details>
+  <summary>4 skill'in içinde ne var?</summary>
+
+  | Skill | Ne yapar |
+  |-------|----------|
+  | `update-config` | "Bundan sonra her seferinde..." de, hook'u ve izni o yazsın |
+  | `loop` | Komutu aralıklarla tekrar çalıştırır; deploy'u, CI'ı o izler |
+  | `schedule` | Bulutta cron'la çalışan agent'lar; sen uyurken rapor hazır |
+  | `keybindings-help` | Kısayolları yeniden bağla, chord'lar dahil |
+
+  </details>
 
 **Ekli marketplace'ler:** `claude-plugins-official`, `anthropic-skills`, `ui-ux-pro-max-skill`
 
@@ -136,5 +203,5 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 - **gsc** ücretsiz ama Google Cloud'da OAuth (Desktop app) client oluşturmak gerekiyor.
 - **nanobanana Pro modeli** (`gemini-3-pro-image-preview`) billing gerektirir — görsel başına ücretli. Varsayılan Flash'ta bırakmakta fayda var.
 - **Gemini uygulaması aboneliği API'yi kapsamaz.** MCP'ler API anahtarı üzerinden çalışır, abonelik oradan geçmez.
-- **fal.ai** denendi, tamamen kullandıkça öde olduğu için kaldırıldı.
+- **fal.ai** ücretli: ücretsiz kota yok, tamamen kullandıkça öde. Kullanmadan önce bütçe kararı ver.
 
