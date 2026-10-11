@@ -100,20 +100,6 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
 ---
 
-## Kurulum
-
-### Plugin ekleme
-
-```bash
-claude plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill
-```
-
-```bash
-claude plugin install ui-ux-pro-max@ui-ux-pro-max-skill
-```
-
----
-
 ## Maliyet Notları
 
 - **Ücretsiz kullanılanlar:** stitch (350 üretim/ay), nanobanana (Flash modeli), context7, markitdown, github, remotion, omniroute, headroom, geo-optimizer, gsc
