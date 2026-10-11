@@ -1,7 +1,6 @@
 # skills-and-mcp
 
 Claude Code kurulumumda kullandığım **MCP sunucuları, plugin'ler ve skill'lerin** listesi.
-Yeni bir makineye geçtiğimde ya da kurulumu sıfırladığımda buradan hızlıca toparlıyorum.
 
 Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json) içinde tutuluyor.
 
