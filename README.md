@@ -7,115 +7,92 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
 ---
 
-## MCP Sunucuları
+> Etiketler: `MCP` dış servise bağlanır · `Skill` Claude'a iş akışı öğretir · `Plugin` skill/agent paketi
 
-- **[stitch](https://stitch.withgoogle.com/docs/mcp/setup)**: Bir cümle yaz, Google komple ekranı çizsin. Figma'yı açmadan tasarım sistemi ve varyantlar hazır. *(Ücretsiz, ~350 üretim/ay)*
-- **[nanobanana](https://github.com/YCSE/nanobanana-mcp)**: Gemini'nin görsel motoru terminalinde. Logo, mockup, asset üret ya da mevcut görseli düzenle. *(Flash ücretsiz kotada)*
-- **[21st](https://21st.dev)**: shadcn/ui + Tailwind component'leri tek prompt'la. Hazır kütüphaneden çek, kodu direkt projene düşsün. *(100 kredi/ay, hızlı biter)*
-- **[supabase](https://mcp.supabase.com/mcp)**: Veritabanı, auth ve storage'ı sohbetten yönet. Dashboard'a girmeden tablo kur, sorgu at. *(Ücretsiz plan)*
-- **[github](https://github.com/github/github-mcp-server)**: Repo, issue ve PR'lar Claude'un elinde. Tarayıcıya geçmeden review, merge, triage. *(Ücretsiz)*
-- **[context7](https://github.com/upstash/context7)**: Eskimiş API bilgisine son. Kütüphanenin bugünkü dokümanını anında çeker, halüsinasyon kodu bitirir. *(Ücretsiz)*
-- **[markitdown](https://github.com/microsoft/markitdown)**: PDF, Word, Excel, HTML ne verirsen temiz Markdown'a çevirir. Belge okutmanın en kısa yolu. *(Ücretsiz)*
-- **[remotion-documentation](https://www.npmjs.com/package/@remotion/mcp)**: Remotion'ın resmi doküman beyni. Video kodu yazarken API'yi tahmin etme, sor. *(Ücretsiz)*
-- **[omniroute](https://github.com/diegosouzapw/OmniRoute)**: 370+ sağlayıcı, 150+ ücretsiz tier tek endpoint'te. Kota biterse otomatik başka modele geçer, kodlama hiç durmaz. *(MIT, ücretsiz)*
-- **[headroom](https://github.com/headroomlabs-ai/headroom)**: Tool çıktısını, log'ları, JSON'u LLM'e gitmeden sıkıştırır. Aynı cevap, %20-95 daha az token. *(Ücretsiz)*
-- **[meta-ads](https://github.com/pipeboard-co/meta-ads-mcp)**: Facebook + Instagram reklamlarını sohbetten yönet. Kampanya aç, bütçe değiştir, performansı analiz et. *(Pipeboard, free plan)*
-- **[geo-optimizer](https://github.com/Auriti-Labs/geo-optimizer-skill)**: ChatGPT, Perplexity ve Google AI Overviews sitene atıf yapıyor mu? Tek komutla GEO/AEO karnesi ve düzeltme listesi. *(MIT, ücretsiz)*
-- **[gsc](https://github.com/AminForou/mcp-gsc)**: Search Console verisi sohbette. Hangi sorgu geliyor, hangi sayfa düşüyor, indeksleme neden takıldı; tahmin değil gerçek veri. *(Ücretsiz, Google OAuth)*
-- **[openseo](https://github.com/every-app/open-seo)**: Semrush/Ahrefs'in açık kaynak alternatifi. Anahtar kelime, rakip, backlink ve YZ görünürlüğü verisi agent'ının elinde. *(DataForSEO kullandıkça öde)*
+## 🎨 Tasarım & UI
 
-> **Not:** Resmi Google sunucusu olan `stitch` dışındakiler üçüncü taraf. `npx` ile çalışanlar her açılışta paketi güncellediği için kaynağına güvenmek gerekiyor.
+- **[ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** `Plugin`: Cebindeki tasarım ajansı. 84 stil, 192 palet, 74 font eşleşmesi; "AI yaptı" belli olmayan arayüzler.
+- **[stitch](https://stitch.withgoogle.com/docs/mcp/setup)** `MCP`: Bir cümle yaz, Google komple ekranı çizsin. Figma'yı açmadan tasarım sistemi ve varyantlar hazır. *(Ücretsiz, ~350 üretim/ay)*
+- **[21st](https://21st.dev)** `MCP`: shadcn/ui + Tailwind component'leri tek prompt'la. Hazır kütüphaneden çek, kodu direkt projene düşsün. *(100 kredi/ay, hızlı biter)*
+- **[nanobanana](https://github.com/YCSE/nanobanana-mcp)** `MCP`: Gemini'nin görsel motoru terminalinde. Logo, mockup, asset üret ya da mevcut görseli düzenle. *(Flash ücretsiz kotada)*
+- **[awesome-design-systems](https://github.com/alexpate/awesome-design-systems)** `Skill`: Dünyanın en iyi tasarım sistemleri tek yerde; ilham ve referans.
 
----
+## 🎬 Video (Remotion)
 
-## Plugin & Marketplace
+- **[remotion-documentation](https://www.npmjs.com/package/@remotion/mcp)** `MCP`: Remotion'ın resmi doküman beyni. Video kodu yazarken API'yi tahmin etme, sor. *(Ücretsiz)*
+- **[`remotion-best-practices`](https://github.com/remotion-dev/skills)** `Skill`: React ile video yapmanın resmi rehberi. Hangi skill'i seçeceğini bilmiyorsan buradan başla.
+- **`remotion-create`** `Skill`: "Plak dükkanı için promo video yap" de, proje ve composition hazır.
+- **`remotion-markup` · `remotion-interactivity`** `Skill`: Animasyon, efekt ve yerleşimde Remotion ekibinin kuralları; sonradan düzenlenebilir kurgu.
+- **`remotion-captions`** `Skill`: Sesi yazıya dök, altyazıyı TikTok tarzı animasyonla ekrana bas.
+- **`remotion-studio` · `remotion-render`** `Skill`: Canlı önizle, sonra MP4'e dök; local ya da Lambda, ayar derdi yok.
+- **`remotion-maps`** `Skill`: Harita animasyonları; rota çiz, şehirden şehre uç.
+- **`remotion-multimedia`** `Skill`: Mediabunny ile video/ses dosyalarını oku, kes, dönüştür.
+- **`remotion-saas` · `remotion-upgrade` · `remotion-docs`** `Skill`: Remotion üstüne SaaS kur, paketleri güvenle güncelle, dokümanda anında ara.
 
-- **[superpowers](https://github.com/obra/superpowers)**: Claude'a kıdemli mühendis disiplini aşılar. Brainstorm, plan, TDD, sistematik debug; rastgele kod yazmaya son.
-- **[ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)**: Cebindeki tasarım ajansı. 84 stil, 192 palet, 74 font eşleşmesi; "AI yaptı" belli olmayan arayüzler.
-- **[agent-sdk-dev](https://github.com/anthropics/claude-plugins-official)**: Kendi Claude agent'ını dakikalar içinde ayağa kaldır ve best practice'e göre doğrulat.
+## 🔍 SEO · GEO · AEO
+
+- **[geo-optimizer](https://github.com/Auriti-Labs/geo-optimizer-skill)** `MCP` `Skill`: ChatGPT, Perplexity, AI Overviews sitene atıf yapıyor mu? Princeton'ın 47 yöntemiyle GEO/AEO karnesi; llms.txt, bot erişimi, schema. *(Ücretsiz)*
+- **[gsc](https://github.com/AminForou/mcp-gsc)** `MCP`: Search Console verisi sohbette. Hangi sorgu geliyor, hangi sayfa düşüyor, indeksleme neden takıldı; tahmin değil gerçek veri. *(Ücretsiz, Google OAuth)*
+- **[openseo](https://github.com/every-app/open-seo)** `MCP`: Semrush/Ahrefs'in açık kaynak alternatifi. Kelime, rakip, backlink ve YZ görünürlüğü verisi agent'ının elinde. *(DataForSEO kullandıkça öde)*
+- **[`seo-audit` · `keyword-research` · `keyword-clustering`](https://github.com/every-app/open-seo)** `Skill`: Veriye dayalı SEO denetimi, kelime fırsatları ve sayfa-kelime haritası; cannibalization'a son.
+- **[`competitor-analysis` · `competitive-landscape` · `link-prospecting`](https://github.com/every-app/open-seo)** `Skill`: Rakibin trafiğini nereden aldığını çöz, boşluğu bul, backlink adaylarına outreach taslağı hazırla.
+- **[`ai-visibility-audit` · `ai-prompt-research`](https://github.com/every-app/open-seo)** `Skill`: YZ neden rakibini öneriyor? İnsanların ChatGPT'ye ne sorduğunu ve kimin alıntılandığını gör.
+- **[`local-seo`](https://github.com/every-app/open-seo)** `Skill`: Google İşletme Profili denetimi ve Maps görünürlük haritası.
+- **[`seo-report` · `seo-coach` · `seo-project-setup` · `setup-openseo`](https://github.com/every-app/open-seo)** `Skill`: Tek sayfalık HTML rapor, rehber mod ve OpenSEO kurulum/proje bağlamı.
+- **[`seo-auditor`](https://github.com/alirezarezvani/claude-skills)** `Skill`: Meta etiket, okunabilirlik, kırık link, sitemap; tek taramada SEO karnesi.
+- **[`geo-seo-claude`](https://github.com/zubair-trabzada/geo-seo-claude)** `Skill`: Google'da değil, ChatGPT/Perplexity cevaplarında da çık; GEO optimizasyonu.
+- **[`seomachine`](https://github.com/TheCraigHewitt/seomachine)** `Skill`: Anahtar kelimeden yayına SEO içerik fabrikası.
+
+## 📣 Reklam & Sosyal Medya
+
+- **[meta-ads](https://github.com/pipeboard-co/meta-ads-mcp)** `MCP`: Facebook + Instagram reklamlarını sohbetten yönet. Kampanya aç, bütçe değiştir, performansı analiz et. *(Pipeboard, free plan)*
+- **[`ads`](https://github.com/AgriciDaniel/claude-ads)** `Skill`: Google, Meta, LinkedIn, TikTok reklam hesaplarına 225+ kontrollü denetim. Boşa giden bütçeyi bulur.
+- **[`ig-reel`](https://github.com/Jakeschincariol/instagram-agent-skill)** `Skill`: Ham fikirden çekime hazır Reel. 26 skorlanmış hook formülü, script, ekran yazısı, zamanlı beat sheet.
+- **`ig-viral`** `Skill`: Nişindeki şu an patlayan reel'leri bulur, hook'unu çözer, sana swipe file çıkarır.
+- **`ig-caption` · `ig-carousel` · `ig-story`** `Skill`: "... devamı"ndan sağ çıkan caption, kaydırtan carousel, DM'e taşıyan story dizisi.
+- **`ig-plan` · `ig-repurpose`** `Skill`: Haftalık içerik takvimi; tek YouTube videosundan bir haftalık reel + carousel.
+- **`ig-profile` · `ig-audit`** `Skill`: Profilini 100 üzerinden puanlar, insights'ını okur: ne tuttu, neden battı.
+- **`ig-dm` · `ig-comment` · `ig-reply`** `Skill`: Cevap alan DM, bot gibi olmayan yorum, hater'dan lead'e öncelikli cevap.
+- **`ig-human`** `Skill`: Taslaktaki AI izini siler; em dash, slop kelimeler, görünmez karakterler gider.
+
+## 🛠️ Geliştirme & Kod Kalitesi
+
+- **[superpowers](https://github.com/obra/superpowers)** `Plugin`: Claude'a kıdemli mühendis disiplini aşılar. Brainstorm, plan, TDD, sistematik debug; rastgele kod yazmaya son.
+- **[`ponytail`](https://github.com/DietrichGebert/ponytail)** `Skill`: Odadaki en tembel kıdemli dev gibi düşünür. En iyi kod hiç yazılmayan koddur; YAGNI, stdlib, tek satır.
+- **`ponytail-review` · `ponytail-audit`** `Skill`: Değişikliği ya da tüm repoyu sade dille inceler: bug, güvenlik, yük altında ne kırılır, ne silinebilir.
+- **`ponytail-debt` · `ponytail-gain` · `ponytail-help`** `Skill`: Ertelenen kısayolların borç defteri, ölçülmüş tasarruf ve hızlı referans.
+- **[`focused-fix`](https://github.com/alirezarezvani/claude-skills)** `Skill`: Bozuk modülü 5 fazlı protokolle onarır; yama değil kök neden.
+- **[`review` · `security-scan`](https://github.com/alirezarezvani/claude-skills)** `Skill`: Push'tan önce son kapı; hatayı ve sızan anahtarı CI'dan önce sen gör.
+- **[`git/cm` · `git/cp` · `git/pr` · `git/clean`](https://github.com/alirezarezvani/claude-skills)** `Skill`: Conventional commit, push, PR, branch temizliği; git ritüeli tek komut.
+- **[`update-docs` · `plugin-audit`](https://github.com/alirezarezvani/claude-skills)** `Skill`: Kod değişti, doküman da güncellensin; skill/plugin dizinine 8 fazlı denetim.
+- **`simplify`** `Skill`: Değişen kodu tarar, tekrarı ve gereksiz karmaşayı budar. Kod incelir, okunur olur.
+- **[github](https://github.com/github/github-mcp-server)** `MCP`: Repo, issue ve PR'lar Claude'un elinde. Tarayıcıya geçmeden review, merge, triage. *(Ücretsiz)*
+- **[context7](https://github.com/upstash/context7)** `MCP`: Eskimiş API bilgisine son. Kütüphanenin bugünkü dokümanını anında çeker, halüsinasyon kodu bitirir. *(Ücretsiz)*
+- **[supabase](https://mcp.supabase.com/mcp)** `MCP`: Veritabanı, auth ve storage'ı sohbetten yönet. Dashboard'a girmeden tablo kur, sorgu at. *(Ücretsiz plan)*
+- **[markitdown](https://github.com/microsoft/markitdown)** `MCP`: PDF, Word, Excel, HTML ne verirsen temiz Markdown'a çevirir. Belge okutmanın en kısa yolu. *(Ücretsiz)*
+
+## ⚡ Token & Model Yönetimi
+
+- **[omniroute](https://github.com/diegosouzapw/OmniRoute)** `MCP`: 370+ sağlayıcı, 150+ ücretsiz tier tek endpoint'te. Kota biterse otomatik başka modele geçer, kodlama hiç durmaz. *(MIT, ücretsiz)*
+- **`omni-*` · `cli-*` · `config-codex-cli`** `Skill`: OmniRoute'un tamamı Claude'un elinde (44 skill): sağlayıcı, routing, bütçe, cache, sıkıştırma, A2A; API'den de terminalden de.
+- **[headroom](https://github.com/headroomlabs-ai/headroom)** `MCP`: Tool çıktısını, log'ları, JSON'u LLM'e gitmeden sıkıştırır. Aynı cevap, %20-95 daha az token. *(Ücretsiz)*
+
+## 🧠 Prompt & Agent
+
+- **[`prompt-master`](https://github.com/nidhinjs/prompt-master)** `Skill`: Her AI aracı için nokta atışı prompt; Midjourney'den Cursor'a. Boşa kredi yakma.
+- **[`task-observer`](https://github.com/rebelytics/one-skill-to-rule-them-all)** `Skill`: "One Skill to Rule Them All". Çalışmanı izler, düzeltmelerini yakalar, diğer skill'lerini senin onayınla geliştirir.
+- **[agent-sdk-dev](https://github.com/anthropics/claude-plugins-official)** `Plugin`: Kendi Claude agent'ını dakikalar içinde ayağa kaldır ve best practice'e göre doğrulat.
+- **`claude-api`** `Skill`: Model ID, fiyat, streaming, tool use. Claude ile uygulama yazarken ezbere değil, doğru bilgiyle.
+
+## ⚙️ Claude Code Ayar & Otomasyon
+
+- **`update-config`** `Skill`: "Bundan sonra her seferinde..." de, hook'u ve izni o yazsın. settings.json'a elle dokunma.
+- **`loop` · `schedule`** `Skill`: Komutu aralıklarla tekrar çalıştır ya da bulutta cron'la agent koştur; sen uyurken rapor hazır.
+- **`keybindings-help`** `Skill`: Kısayolları kendi parmaklarına göre yeniden bağla, chord'lar dahil.
 
 **Ekli marketplace'ler:** `claude-plugins-official`, `anthropic-skills`, `ui-ux-pro-max-skill`
 
----
-
-## Skill'ler
-
-### Yerleşik (Claude Code ile gelir)
-
-- **`update-config`**: "Bundan sonra her seferinde..." de, hook'u ve izni o yazsın. settings.json'a elle dokunma.
-- **`keybindings-help`**: Kısayolları kendi parmaklarına göre yeniden bağla, chord'lar dahil.
-- **`simplify`**: Değişen kodu tarar, tekrarı ve gereksiz karmaşayı budar. Kod incelir, okunur olur.
-- **`loop`**: Bir komutu aralıklarla tekrar çalıştırır. Deploy'u, CI'ı sen izleme, o izlesin.
-- **`schedule`**: Bulutta cron'la çalışan agent'lar. Sen uyurken rapor hazır.
-- **`claude-api`**: Model ID, fiyat, streaming, tool use. Claude ile uygulama yazarken ezbere değil, doğru bilgiyle.
-
-### Video: Remotion ([remotion-dev/skills](https://github.com/remotion-dev/skills))
-
-- **`remotion-best-practices`**: React ile video yapmanın resmi rehberi. Hangi skill'i seçeceğini bilmiyorsan buradan başla.
-- **`remotion-create`**: "Plak dükkanı için promo video yap" de, proje ve composition hazır.
-- **`remotion-markup`**: Animasyon, efekt ve içerik yerleşiminde Remotion ekibinin kendi kuralları.
-- **`remotion-captions`**: Sesi yazıya dök, altyazıyı TikTok tarzı animasyonla ekrana bas.
-- **`remotion-render`**: Videoyu MP4'e dök; local ya da Lambda, ayar derdi yok.
-- **`remotion-studio`**: Studio'da canlı önizleme; render beklemeden sonucu gör.
-- **`remotion-docs`**: Remotion dokümanında anında arama.
-- **`remotion-interactivity`**: Markup'ı sonradan düzenlenebilir, interaktif olacak şekilde kurgula.
-- **`remotion-maps`**: Harita animasyonları; rota çiz, şehirden şehre uç.
-- **`remotion-multimedia`**: Mediabunny ile video/ses dosyalarını oku, kes, dönüştür.
-- **`remotion-saas`**: Remotion üstüne video üreten bir SaaS kur.
-- **`remotion-upgrade`**: Remotion ve bağlı paketleri tek hamlede güvenle güncelle.
-
-### Instagram ([Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill))
-
-- **`ig-reel`**: Ham fikirden çekime hazır Reel. 26 skorlanmış hook formülü, script, ekran yazısı, zamanlı beat sheet.
-- **`ig-viral`**: Nişindeki şu an patlayan reel'leri bulur, hook'unu çözer, sana swipe file çıkarır.
-- **`ig-caption`**: "... devamı" kesiminden sağ çıkan caption; lint'li, 3 hashtag'li.
-- **`ig-carousel`**: Kaydırtan kapak, slayt slayt metin ve 1080x1350 dosyalar.
-- **`ig-story`**: Günün story dizisi; hangi sticker nerede, DM'e nasıl taşınır.
-- **`ig-plan`**: Haftalık içerik takvimi ve etkileşim listesi. "Ne paylaşsam" derdi biter.
-- **`ig-profile`**: Profilini 100 üzerinden puanlar, puan kaybettiren bio/highlight/grid'i yeniden yazar.
-- **`ig-audit`**: Insights'ını okur: ne tuttu, neden battı, neyi bırakmalısın.
-- **`ig-repurpose`**: Tek YouTube videosu ya da podcast'ten bir haftalık reel + carousel.
-- **`ig-dm`**: Cevap alan DM'ler; ilk mesaj, collab pitch, iki takip.
-- **`ig-comment`**: Bot gibi değil, fikri olan biri gibi yorum.
-- **`ig-reply`**: Kendi yorumlarına öncelik sırasıyla cevap; hater'dan lead'e.
-- **`ig-human`**: Taslaktaki AI izini siler; em dash, slop kelimeler, görünmez karakterler gider.
-
-### OmniRoute ([diegosouzapw/OmniRoute](https://github.com/diegosouzapw/OmniRoute))
-
-- **`omni-*` (25 skill)**: OmniRoute API'sinin tamamı Claude'un elinde: sağlayıcılar, routing combo'ları, bütçe, cache, sıkıştırma, MCP, A2A, webhook, tunnel.
-- **`cli-*` (19 skill)**: Aynı gücü terminalden: sunucuyu başlat, sağlayıcı ekle, maliyeti izle, eval koştur.
-- **`config-codex-cli`**: Codex CLI'yi OmniRoute'a bağlar; config ve 7 profil hazır.
-
-### Kod kalitesi
-
-- **[`ponytail`](https://github.com/DietrichGebert/ponytail)**: Odadaki en tembel kıdemli dev gibi düşünür. En iyi kod hiç yazılmayan koddur; YAGNI, stdlib, tek satır.
-- **`ponytail-review` · `ponytail-audit`**: Değişikliği ya da tüm repoyu sade dille inceler: bug, güvenlik, yük altında ne kırılır, ne silinebilir.
-- **`ponytail-debt` · `ponytail-gain` · `ponytail-help`**: Ertelenen kısayolların borç defteri, ölçülmüş tasarruf ve hızlı referans.
-- **[`focused-fix`](https://github.com/alirezarezvani/claude-skills)**: Bozuk modülü 5 fazlı protokolle onarır; yama değil kök neden.
-- **[`review`](https://github.com/alirezarezvani/claude-skills)**: Push'tan önce son kapı. Hatayı CI'dan önce sen gör.
-- **[`security-scan`](https://github.com/alirezarezvani/claude-skills)**: Push öncesi güvenlik taraması; sızan anahtar repoya girmesin.
-- **[`plugin-audit`](https://github.com/alirezarezvani/claude-skills)**: Skill/plugin dizinine 8 fazlı denetim.
-- **[`git/cm` · `git/cp` · `git/pr` · `git/clean`](https://github.com/alirezarezvani/claude-skills)**: Conventional commit, push, PR, branch temizliği; git ritüeli tek komut.
-- **[`update-docs`](https://github.com/alirezarezvani/claude-skills)**: Kod değişti, doküman da güncellensin.
-
-### Prompt & meta
-
-- **[`prompt-master`](https://github.com/nidhinjs/prompt-master)**: Her AI aracı için nokta atışı prompt; Midjourney'den Cursor'a. Boşa kredi yakma.
-- **[`task-observer`](https://github.com/rebelytics/one-skill-to-rule-them-all)**: "One Skill to Rule Them All". Çalışmanı izler, düzeltmelerini yakalar, diğer skill'lerini senin onayınla geliştirir.
-
-### Pazarlama & SEO
-
-- **[`ads`](https://github.com/AgriciDaniel/claude-ads)**: Google, Meta, LinkedIn, TikTok reklam hesaplarına 225+ kontrollü denetim. Boşa giden bütçeyi bulur.
-- **[`seo-auditor`](https://github.com/alirezarezvani/claude-skills)**: Meta etiket, okunabilirlik, kırık link, sitemap; tek taramada SEO karnesi.
-- **[`geo-seo-claude`](https://github.com/zubair-trabzada/geo-seo-claude)**: Google'da değil, ChatGPT/Perplexity cevaplarında da çık; GEO optimizasyonu.
-- **[`seomachine`](https://github.com/TheCraigHewitt/seomachine)**: Anahtar kelimeden yayına SEO içerik fabrikası.
-- **[`geo-optimizer`](https://github.com/Auriti-Labs/geo-optimizer-skill)**: Princeton araştırmasına dayalı 47 yöntemle sayfanı YZ'nin alıntılayacağı hale getirir; llms.txt, bot erişimi, schema.
-- **[`seo-audit` · `keyword-research` · `keyword-clustering`](https://github.com/every-app/open-seo)**: Veriye dayalı SEO denetimi, kelime fırsatları ve sayfa-kelime haritası; cannibalization'a son.
-- **[`competitor-analysis` · `competitive-landscape` · `link-prospecting`](https://github.com/every-app/open-seo)**: Rakibin trafiğini nereden aldığını çöz, boşluğu bul, backlink adaylarına outreach taslağı hazırla.
-- **[`ai-visibility-audit` · `ai-prompt-research`](https://github.com/every-app/open-seo)**: YZ neden rakibini öneriyor? İnsanların ChatGPT'ye ne sorduğunu ve kimin alıntılandığını gör.
-- **[`local-seo`](https://github.com/every-app/open-seo)**: Google İşletme Profili denetimi ve Maps görünürlük haritası.
-- **[`seo-report` · `seo-coach` · `seo-project-setup` · `setup-openseo`](https://github.com/every-app/open-seo)**: Tek sayfalık HTML rapor, rehber mod ve OpenSEO kurulum/proje bağlamı.
-- **[`awesome-design-systems`](https://github.com/alexpate/awesome-design-systems)**: Dünyanın en iyi tasarım sistemleri tek yerde; ilham ve referans.
+> **Not:** Resmi Google sunucusu olan `stitch` dışındaki MCP'ler üçüncü taraf. `npx` ile çalışanlar her açılışta paketi güncellediği için kaynağına güvenmek gerekiyor.
 
 ---
 
