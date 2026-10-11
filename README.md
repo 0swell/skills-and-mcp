@@ -17,17 +17,30 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 - **[nanobanana](https://github.com/YCSE/nanobanana-mcp)** `MCP`: Gemini'nin görsel motoru terminalinde. Logo, mockup, asset üret ya da mevcut görseli düzenle. *(Flash ücretsiz kotada)*
 - **[awesome-design-systems](https://github.com/alexpate/awesome-design-systems)** `Skill`: Dünyanın en iyi tasarım sistemleri tek yerde; ilham ve referans.
 
-## 🎬 Video (Remotion)
+## 🎬 Video
 
-- **[remotion-documentation](https://www.npmjs.com/package/@remotion/mcp)** `MCP`: Remotion'ın resmi doküman beyni. Video kodu yazarken API'yi tahmin etme, sor. *(Ücretsiz)*
-- **[`remotion-best-practices`](https://github.com/remotion-dev/skills)** `Skill`: React ile video yapmanın resmi rehberi. Hangi skill'i seçeceğini bilmiyorsan buradan başla.
-- **`remotion-create`** `Skill`: "Plak dükkanı için promo video yap" de, proje ve composition hazır.
-- **`remotion-markup` · `remotion-interactivity`** `Skill`: Animasyon, efekt ve yerleşimde Remotion ekibinin kuralları; sonradan düzenlenebilir kurgu.
-- **`remotion-captions`** `Skill`: Sesi yazıya dök, altyazıyı TikTok tarzı animasyonla ekrana bas.
-- **`remotion-studio` · `remotion-render`** `Skill`: Canlı önizle, sonra MP4'e dök; local ya da Lambda, ayar derdi yok.
-- **`remotion-maps`** `Skill`: Harita animasyonları; rota çiz, şehirden şehre uç.
-- **`remotion-multimedia`** `Skill`: Mediabunny ile video/ses dosyalarını oku, kes, dönüştür.
-- **`remotion-saas` · `remotion-upgrade` · `remotion-docs`** `Skill`: Remotion üstüne SaaS kur, paketleri güvenle güncelle, dokümanda anında ara.
+- **[Remotion MCP](https://www.npmjs.com/package/@remotion/mcp)** `MCP`: Remotion'ın resmi doküman beyni. Video kodu yazarken API'yi tahmin etme, sor. *(Ücretsiz)*
+- **[Remotion Skills](https://github.com/remotion-dev/skills)** `Skill`: React ile kodla video üret. Remotion ekibinin 12 resmi skill'i fikirden MP4'e tüm yolu kapsıyor.
+
+  <details>
+  <summary>12 skill'in içinde ne var?</summary>
+
+  | Skill | Ne yapar |
+  |-------|----------|
+  | `remotion-best-practices` | Hepsinin yönlendiricisi; hangisini seçeceğini bilmiyorsan buradan başla |
+  | `remotion-create` | "Plak dükkanı için promo video yap" de, proje ve composition hazır |
+  | `remotion-markup` | Animasyon, efekt ve yerleşimde Remotion ekibinin kuralları |
+  | `remotion-interactivity` | Sonradan düzenlenebilir, interaktif kurgu |
+  | `remotion-captions` | Sesi yazıya dök, TikTok tarzı animasyonlu altyazı |
+  | `remotion-studio` | Render beklemeden canlı önizleme |
+  | `remotion-render` | MP4'e dök; local ya da Lambda |
+  | `remotion-maps` | Harita animasyonu; rota çiz, şehirden şehre uç |
+  | `remotion-multimedia` | Mediabunny ile video/ses oku, kes, dönüştür |
+  | `remotion-saas` | Remotion üstüne video üreten SaaS kur |
+  | `remotion-upgrade` | Remotion paketlerini güvenle güncelle |
+  | `remotion-docs` | Dokümanda anında arama |
+
+  </details>
 
 ## 🛠️ Geliştirme & Kod Kalitesi
 
