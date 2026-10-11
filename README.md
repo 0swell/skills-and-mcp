@@ -7,16 +7,6 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
 ---
 
-## İçindekiler
-
-- [MCP Sunucuları](#mcp-sunucuları)
-- [Plugin & Marketplace](#plugin--marketplace)
-- [Skill'ler](#skiller)
-- [Kurulum](#kurulum)
-- [Maliyet Notları](#maliyet-notları)
-
----
-
 ## MCP Sunucuları
 
 - **[stitch](https://stitch.withgoogle.com/docs/mcp/setup)**: Bir cümle yaz, Google komple ekranı çizsin. Figma'yı açmadan tasarım sistemi ve varyantlar hazır. *(Ücretsiz, ~350 üretim/ay)*
