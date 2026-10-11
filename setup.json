@@ -219,7 +219,7 @@
     "type": "mcp+skill",
     "description": "ChatGPT, Perplexity, AI Overviews sitene atıf yapıyor mu? Tek komutla GEO/AEO karnesi.",
     "link": "https://github.com/Auriti-Labs/geo-optimizer-skill",
-    "install": "uv tool install --python 3.13 \"geo-optimizer-skill[mcp]\" && claude mcp add geo-optimizer -s user -- geo-mcp (skill: SKILL.md + references/ elle ~/.claude/skills/geo-optimizer/)"
+    "install": "uv tool install --python 3.13 \"geo-optimizer-skill[mcp]\" --with \"mcp<2\" && claude mcp add geo-optimizer -s user -- geo-mcp (skill: SKILL.md + references/ elle ~/.claude/skills/geo-optimizer/)"
   },
   "gsc": {
     "type": "mcp",
