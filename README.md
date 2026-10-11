@@ -102,66 +102,6 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
 ## Kurulum
 
-### Skill ekleme ([skills CLI](https://skills.sh))
-
-```bash
-npx skills add remotion-dev/skills -g -a claude-code -y
-```
-
-Aynı komutla: `Jakeschincariol/instagram-agent-skill`, `diegosouzapw/OmniRoute`, `DietrichGebert/ponytail`, `nidhinjs/prompt-master`, `rebelytics/one-skill-to-rule-them-all --skill task-observer`, `every-app/open-seo --skill seo-audit keyword-research ...`.
-
-`geo-optimizer` skill'i frontmatter'sız geldiği için CLI ile kurulmuyor: repodaki `SKILL.md` + `references/` elle `~/.claude/skills/geo-optimizer/` altına kopyalanır.
-
-### MCP ekleme
-
-HTTP tabanlı sunucular:
-
-```bash
-claude mcp add stitch https://stitch.googleapis.com/mcp --transport http --header "X-Goog-Api-Key: ANAHTARIN" -s user
-```
-
-```bash
-claude mcp add --transport http meta-ads -s user https://meta-ads.mcp.pipeboard.co/
-```
-
-npm paketi olarak çalışanlar:
-
-```bash
-claude mcp add nanobanana -s user -e GOOGLE_AI_API_KEY=ANAHTARIN -- npx -y @ycse/nanobanana-mcp
-```
-
-```bash
-claude mcp add remotion-documentation -s user -- npx -y @remotion/mcp@latest
-```
-
-Önce CLI'si kurulması gerekenler:
-
-```bash
-npm install -g omniroute && claude mcp add omniroute -s user -- omniroute --mcp
-```
-
-```bash
-uv tool install --python 3.13 "headroom-ai[all]" && headroom mcp install --agent claude
-```
-
-```bash
-uv tool install --python 3.13 "geo-optimizer-skill[mcp]" --with "mcp<2" && claude mcp add geo-optimizer -s user -- geo-mcp
-```
-
-```bash
-claude mcp add gsc -s user -e GSC_OAUTH_CLIENT_SECRETS_FILE=/path/to/client_secrets.json -- uvx mcp-search-console
-```
-
-```bash
-claude mcp add --transport http openseo -s user https://app.openseo.so/mcp
-```
-
-Doğrulama:
-
-```bash
-claude mcp list
-```
-
 ### Plugin ekleme
 
 ```bash
@@ -171,14 +111,6 @@ claude plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill
 ```bash
 claude plugin install ui-ux-pro-max@ui-ux-pro-max-skill
 ```
-
-### Scope seçimi
-
-| Scope | Kapsam |
-|-------|--------|
-| `-s user` | Tüm projelerde geçerli |
-| `-s local` | Sadece bulunduğun proje klasöründe |
-| `-s project` | `.mcp.json` ile takıma paylaşılır |
 
 ---
 
@@ -193,8 +125,3 @@ claude plugin install ui-ux-pro-max@ui-ux-pro-max-skill
 - **Gemini uygulaması aboneliği API'yi kapsamaz.** MCP'ler API anahtarı üzerinden çalışır, abonelik oradan geçmez.
 - **fal.ai** denendi, tamamen kullandıkça öde olduğu için kaldırıldı.
 
----
-
-## Güvenlik
-
-- Üçüncü taraf MCP'ler `npx` ile kendini güncelleyebilir; kaynak repoyu ara ara kontrol et.
