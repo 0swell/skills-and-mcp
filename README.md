@@ -174,7 +174,7 @@ uv tool install --python 3.13 "headroom-ai[all]" && headroom mcp install --agent
 ```
 
 ```bash
-uv tool install --python 3.13 "geo-optimizer-skill[mcp]" && claude mcp add geo-optimizer -s user -- geo-mcp
+uv tool install --python 3.13 "geo-optimizer-skill[mcp]" --with "mcp<2" && claude mcp add geo-optimizer -s user -- geo-mcp
 ```
 
 ```bash
