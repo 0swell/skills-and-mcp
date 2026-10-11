@@ -197,7 +197,4 @@ claude plugin install ui-ux-pro-max@ui-ux-pro-max-skill
 
 ## Güvenlik
 
-- API anahtarları bu repoda **tutulmaz**. Yukarıdaki komutlarda `ANAHTARIN` yazan yerlere kendi anahtarını koy.
-- Anahtarlar `~/.claude.json` içinde saklanır — bu dosyayı paylaşma.
 - Üçüncü taraf MCP'ler `npx` ile kendini güncelleyebilir; kaynak repoyu ara ara kontrol et.
-- `omniroute` ve `headroom` yerel proxy olarak çalışır; Claude Code'u onlardan geçirmek (`ANTHROPIC_BASE_URL`) isteğe bağlı, varsayılan kurulumda yönlendirme yok.
