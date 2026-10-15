@@ -107,8 +107,8 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
 ## 🛠️ Geliştirme & Kod Kalitesi
 
-- **[REA](https://github.com/morluto/rea)** ⭐ 253k `MCP` `Skill`: Bir uygulamada beğendiğin özelliği gör, kaynak kodu olmadan nasıl çalıştığını binary seviyesine kadar çöz, kanıtıyla kendi projene uyarla. Native, Electron/JS, .NET ve web. *(MIT, ücretsiz)*
 - **[superpowers](https://github.com/obra/superpowers)** ⭐ 298k `Plugin`: Claude'a kıdemli mühendis disiplini aşılar. Brainstorm, plan, TDD, sistematik debug; rastgele kod yazmaya son.
+- **[REA](https://github.com/morluto/rea)** ⭐ 253k `MCP` `Skill`: Bir uygulamada beğendiğin özelliği gör, kaynak kodu olmadan nasıl çalıştığını binary seviyesine kadar çöz, kanıtıyla kendi projene uyarla. Native, Electron/JS, .NET ve web. *(MIT, ücretsiz)*
 - **[markitdown](https://github.com/microsoft/markitdown)** ⭐ 190k `MCP`: PDF, Word, Excel, HTML ne verirsen temiz Markdown'a çevirir. Belge okutmanın en kısa yolu. *(Ücretsiz)*
 
 - **[Ponytail](https://github.com/DietrichGebert/ponytail)** ⭐ 161k `Skill`: Odadaki en tembel kıdemli dev gibi düşünür. En iyi kod hiç yazılmayan koddur; YAGNI, stdlib, tek satır.

@@ -112,16 +112,16 @@
     }
   },
   "Geliştirme & Kod Kalitesi": {
+    "superpowers": {
+      "type": "plugin",
+      "description": "Claude'a kıdemli mühendis disiplini: brainstorm, plan, TDD, sistematik debug.",
+      "link": "https://github.com/obra/superpowers.git"
+    },
     "rea": {
       "type": "mcp+skill",
       "description": "Reverse Engineer Anything: uygulamadaki bir özelliğin nasıl çalıştığını kaynak kodsuz, binary seviyesine kadar kanıtıyla çözer. Native, Electron/JS, .NET, web.",
       "link": "https://github.com/morluto/rea",
       "install": "npx -y rea-agents@latest setup --yes --client claude_code --skill-client claude_code"
-    },
-    "superpowers": {
-      "type": "plugin",
-      "description": "Claude'a kıdemli mühendis disiplini: brainstorm, plan, TDD, sistematik debug.",
-      "link": "https://github.com/obra/superpowers.git"
     },
     "ponytail": {
       "type": "skill",
