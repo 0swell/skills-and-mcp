@@ -41,6 +41,7 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 - **[`seomachine`](https://github.com/TheCraigHewitt/seomachine)** ⭐ 7.5k `Skill`: Anahtar kelimeden yayına SEO içerik fabrikası.
 - **[gsc](https://github.com/AminForou/mcp-gsc)** ⭐ 1.9k `MCP`: Search Console verisi sohbette. Hangi sorgu geliyor, hangi sayfa düşüyor, indeksleme neden takıldı; tahmin değil gerçek veri. *(Ücretsiz, Google OAuth)*
 - **[geo-optimizer](https://github.com/Auriti-Labs/geo-optimizer-skill)** ⭐ 1k `MCP` `Skill`: ChatGPT, Perplexity, AI Overviews sitene atıf yapıyor mu? Princeton'ın 47 yöntemiyle GEO/AEO karnesi; llms.txt, bot erişimi, schema. *(Ücretsiz)*
+- **[jev-seo](https://github.com/AgriciDaniel/jev-seo)** ⭐ 657 `Skill`: Tek bir ana sayfa URL'si ver, site canlı taransın. Google Search Central'a bağlı 52 kural, Core Web Vitals ve sayfa sayfa YZ yargısı; sonunda tasarımlı PDF, Excel aksiyon listesi ve Markdown rapor. *(Jev API isteğe bağlı, sayfa başı ~0,00015$)*
 
 ### Reklam & Sosyal Medya
 
@@ -206,6 +207,7 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 - **21st** free planında 100 kredi/ay veriyor — birkaç component üretimine denk geliyor, hızlı tükeniyor.
 - **meta-ads** Pipeboard'un free planıyla çalışıyor; ilk kullanımda OAuth ile Meta hesabı bağlanıyor.
 - **openseo** DataForSEO API'si üzerinden çalışır, istek başına ücret; hosted sürüm %28 ekler. Kullanmadan önce bütçe kararı ver.
+- **jev-seo** tarama, kurallar ve raporlar ücretsiz; sayfa yargıları TypeSafe Jev API ile ücretli (sayfa başı ~0,00015$, varsayılan tavan 0,25$). Anahtar yoksa kısmi denetim yapar.
 - **gsc** ücretsiz ama Google Cloud'da OAuth (Desktop app) client oluşturmak gerekiyor.
 - **nanobanana Pro modeli** (`gemini-3-pro-image-preview`) billing gerektirir — görsel başına ücretli. Varsayılan Flash'ta bırakmakta fayda var.
 - **Gemini uygulaması aboneliği API'yi kapsamaz.** MCP'ler API anahtarı üzerinden çalışır, abonelik oradan geçmez.

@@ -33,6 +33,12 @@
         "type": "skill",
         "description": "Anahtar kelimeden yayına SEO içerik fabrikası.",
         "link": "https://github.com/TheCraigHewitt/seomachine.git"
+      },
+      "jev-seo": {
+        "type": "skill",
+        "description": "Ana sayfa URL'sinden canlı SEO denetimi: 52 kural, Core Web Vitals, sayfa sayfa Jev yargısı; PDF + XLSX + MD rapor. Jev API isteğe bağlı ve ücretli (sayfa başı ~0,00015$).",
+        "link": "https://github.com/AgriciDaniel/jev-seo",
+        "install": "git clone https://github.com/AgriciDaniel/jev-seo ~/.claude/skills/jev-seo && cd ~/.claude/skills/jev-seo && uv venv --python 3.13 .venv && uv pip install --python .venv/Scripts/python.exe -r requirements.txt (PDF için Windows'ta Pango/GTK gerekir)"
       }
     },
     "Reklam & Sosyal Medya": {
