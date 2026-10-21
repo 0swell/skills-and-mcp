@@ -277,6 +277,29 @@
       }
     }
   },
+  "Köle (Free Agent)": {
+    "deepseek-harness": {
+      "type": "agent",
+      "description": "Dosya okuyup yazan, komut çalıştıran açık kaynak ajan; web arayüzü + tek seferlik headless mod. Köle olarak dsh:<sağlayıcı>/<model> ile çağrılır.",
+      "link": "https://github.com/deepseek-ai/deepseek-harness",
+      "install": "npm install -g @deepseek-ai/dsh (sağlayıcılar ~/.dsh/cordis.patch.yml, kısayol ~/.local/bin/deepseek.cmd)"
+    },
+    "hermes-agent": {
+      "type": "agent",
+      "description": "Nous Research terminal + masaüstü ajanı; --oneshot ile köle görevlerini çalıştırır, zaman aşımında sıradaki modele düşer.",
+      "link": "https://github.com/NousResearch/hermes-agent"
+    },
+    "evren": {
+      "type": "provider",
+      "description": "OpenAI uyumlu ücretsiz model kapısı: glm-5.3, deepseek-v4-flash, qwen3.8-flash-next. Anahtar Hermes .env'de (HERMES_CUSTOM_EVREN_API_KEY), repoda yok.",
+      "link": "https://evren-llmapi.ssyz.org.tr"
+    },
+    "nvidia-nim": {
+      "type": "provider",
+      "description": "80+ modelin ücretsiz API'si: kimi-k2.6, deepseek-v4.1-flash, glm-5.3, gpt-oss. Anahtar Hermes .env'de (NVIDIA_API_KEY), repoda yok.",
+      "link": "https://build.nvidia.com"
+    }
+  },
   "Diğer": {
     "fluidvoice": {
       "type": "repo",

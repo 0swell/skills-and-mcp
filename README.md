@@ -6,7 +6,7 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
 ---
 
-> Etiketler: `MCP` dış servise bağlanır · `Skill` Claude'a iş akışı öğretir · `Plugin` skill/agent paketi · `Yerleşik` Claude Code ile gelir
+> Etiketler: `MCP` dış servise bağlanır · `Skill` Claude'a iş akışı öğretir · `Plugin` skill/agent paketi · `Yerleşik` Claude Code ile gelir · `Ajan` görev devralan ayrı ajan · `Sağlayıcı` ücretsiz model API'si
 
 ## 📈 Dijital Pazarlama
 
@@ -192,6 +192,27 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
   | `loop` | Komutu aralıklarla tekrar çalıştırır; deploy'u, CI'ı o izler |
   | `schedule` | Bulutta cron'la çalışan agent'lar; sen uyurken rapor hazır |
   | `keybindings-help` | Kısayolları yeniden bağla, chord'lar dahil |
+
+  </details>
+
+## 🦾 Köle (Free Agent)
+
+Uzun, sıkıcı, çok token yakacak işleri ücretsiz modellere devretmek için. Claude görevi yazar, köle çalışır, Claude sonucu kontrol eder. API anahtarları bu repoda yok, makinede Hermes'in `.env` dosyasında duruyor.
+
+- **[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)** ⭐ 257k `Ajan`: Dosya okuyup yazan, komut çalıştıran açık kaynak ajan; istediğin modeli takarsın. Web arayüzü de var, tek seferlik terminal modu da. *(MIT, ücretsiz)*
+- **[Hermes Agent](https://github.com/NousResearch/hermes-agent)** ⭐ 256k `Ajan`: Nous Research'ün terminal + masaüstü ajanı. `--oneshot` ile görevi alır, cevabı dosyaya yazar, zaman aşımında sıradaki modele düşer. *(MIT, ücretsiz)*
+- **[Evren](https://evren-llmapi.ssyz.org.tr)** `Sağlayıcı`: OpenAI uyumlu ücretsiz model kapısı; glm-5.3, deepseek-v4-flash, qwen3.8-flash-next. Hızlı (~40 sn). *(Ücretsiz kredi)*
+- **[NVIDIA NIM](https://build.nvidia.com)** `Sağlayıcı`: 80+ modelin ücretsiz API'si; kimi-k2.6, deepseek-v4.1-flash, glm-5.3, gpt-oss. Kuyruk yüzünden yavaş (~4 dk). *(Ücretsiz)*
+
+  <details>
+  <summary>Nasıl çalıştırılır?</summary>
+
+  | Ne | Komut |
+  |----|-------|
+  | DeepSeek web arayüzü | `deepseek` |
+  | Tek seferlik görev (bulunduğun klasörde) | `deepseek "görev"` |
+  | Yedekli köle (model düşerse sıradaki) | `calistir.ps1 -Gorev gorevler\is.md -Modeller glm-5.3,dsh:nvidia/moonshotai/kimi-k2.6` |
+  | Sağlayıcı ayarı | `~/.dsh/cordis.patch.yml` (anahtarlar ortam değişkeninden okunur) |
 
   </details>
 
