@@ -203,6 +203,7 @@ Uzun, sıkıcı, çok token yakacak işleri ücretsiz modellere devretmek için.
 - **[Hermes Agent](https://github.com/NousResearch/hermes-agent)** ⭐ 256k `Ajan`: Nous Research'ün terminal + masaüstü ajanı. `--oneshot` ile görevi alır, cevabı dosyaya yazar, zaman aşımında sıradaki modele düşer. *(MIT, ücretsiz)*
 - **[Evren](https://evren-llmapi.ssyz.org.tr)** `Sağlayıcı`: OpenAI uyumlu ücretsiz model kapısı; glm-5.3, deepseek-v4-flash, qwen3.8-flash-next. Hızlı (~40 sn). *(Ücretsiz kredi)*
 - **[NVIDIA NIM](https://build.nvidia.com)** `Sağlayıcı`: 80+ modelin ücretsiz API'si; kimi-k2.6, deepseek-v4.1-flash, glm-5.3, gpt-oss. Kuyruk yüzünden yavaş (~4 dk). *(Ücretsiz)*
+- **[FreeLLMAPI](https://github.com/tashfeenahmed/freellmapi)** `Router` ⚠️ *dry-run'da kaldı*: Ücretsiz modelleri tek adreste toplayıp model takılınca sıradakine geçen router. Güvenlik önlemi olarak ilerisine gidilmedi: denendi, kod incelendi, Claude Code'a bağlanmadı, anahtar girilmedi, kaldırıldı. Aynı işi kendi yerel uygulamamızda yazacağız, bu aracı kullanma. *(MIT, ücretsiz)*
 
   <details>
   <summary>Nasıl çalıştırılır?</summary>

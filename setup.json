@@ -298,6 +298,12 @@
       "type": "provider",
       "description": "80+ modelin ücretsiz API'si: kimi-k2.6, deepseek-v4.1-flash, glm-5.3, gpt-oss. Anahtar Hermes .env'de (NVIDIA_API_KEY), repoda yok.",
       "link": "https://build.nvidia.com"
+    },
+    "freellmapi": {
+      "type": "tool",
+      "status": "dry-run (ilerisine gidilmedi)",
+      "description": "Ücretsiz modelleri tek adreste toplayıp model takılınca sıradakine geçen açık kaynak router. Güvenlik önlemi olarak dry-run aşamasında bırakıldı: Docker'da denendi, kod incelendi, Claude Code'a bağlanmadı, hiçbir anahtar girilmedi, kaldırıldı. Aynı işi kendi yerel uygulamamızda yazacağız; bu aracı kullanma.",
+      "link": "https://github.com/tashfeenahmed/freellmapi"
     }
   },
   "Diğer": {
