@@ -115,6 +115,12 @@
       "type": "mcp",
       "description": "Flux, Recraft, Kling gibi yüzlerce görsel/video modeli tek API'de. Ücretli, tamamen kullandıkça öde.",
       "link": "https://fal.ai"
+    },
+    "boardui": {
+      "type": "component+mcp",
+      "description": "Yapay zekâ ürünleri ve dashboard'lar için 69 ücretsiz React bileşeni (React Aria + Tailwind v4). Proje bazlı; henüz kurulmadı.",
+      "link": "https://github.com/BoardUI/boardui",
+      "install": "Projede: npx boardui@latest add <bileşen>"
     }
   },
   "Geliştirme & Kod Kalitesi": {
@@ -203,6 +209,12 @@
       "type": "mcp",
       "description": "PDF, Word, Excel, HTML ne verirsen temiz Markdown'a çevirir.",
       "link": "https://github.com/microsoft/markitdown.git"
+    },
+    "google-skills": {
+      "type": "skill",
+      "description": "Google'ın resmi 184 skill'i. Kurulu: finding-google-skills, google-analytics-data-api-basics, google-analytics-admin-api-basics, sign-in-with-google-web, gemini-api. Gerisi lazım olunca.",
+      "link": "https://github.com/google/skills",
+      "install": "npx skills add google/skills -g -a claude-code -y --skill finding-google-skills gemini-api google-analytics-data-api-basics google-analytics-admin-api-basics sign-in-with-google-web"
     }
   },
   "Claude İçi İşlevsel": {

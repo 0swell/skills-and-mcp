@@ -6,7 +6,7 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
 ---
 
-> Etiketler: `MCP` dış servise bağlanır · `Skill` Claude'a iş akışı öğretir · `Plugin` skill/agent paketi · `Yerleşik` Claude Code ile gelir · `Ajan` görev devralan ayrı ajan · `Sağlayıcı` ücretsiz model API'si
+> Etiketler: `MCP` dış servise bağlanır · `Skill` Claude'a iş akışı öğretir · `Plugin` skill/agent paketi · `Yerleşik` Claude Code ile gelir · `Ajan` görev devralan ayrı ajan · `Sağlayıcı` ücretsiz model API'si · `Component` projeye kopyalanan UI bileşeni
 
 ## 📈 Dijital Pazarlama
 
@@ -101,6 +101,7 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
 - **[ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** ⭐ 135k `Plugin`: Cebindeki tasarım ajansı. 84 stil, 192 palet, 74 font eşleşmesi; "AI yaptı" belli olmayan arayüzler.
 - **[awesome-design-systems](https://github.com/alexpate/awesome-design-systems)** ⭐ 26k `Skill`: Dünyanın en iyi tasarım sistemleri tek yerde; ilham ve referans.
+- **[BoardUI](https://github.com/BoardUI/boardui)** ⭐ 972 `Component` `MCP`: Yapay zekâ ürünleri ve dashboard'lar için 69 ücretsiz React bileşeni: chat, agent log, composer, tablo, takvim, bildirim merkezi. Kaynak kod olarak projeye kopyalanır. React Aria + Tailwind v4. *(Proje bazlı, henüz kurulmadı)*
 - **[nanobanana](https://github.com/YCSE/nanobanana-mcp)** ⭐ 31 `MCP`: Gemini'nin görsel motoru terminalinde. Logo, mockup, asset üret ya da mevcut görseli düzenle. *(Flash ücretsiz kotada)*
 - **[stitch](https://stitch.withgoogle.com/docs/mcp/setup)** `MCP`: Bir cümle yaz, Google komple ekranı çizsin. Figma'yı açmadan tasarım sistemi ve varyantlar hazır. *(Ücretsiz, ~350 üretim/ay)*
 - **[21st](https://21st.dev)** `MCP`: shadcn/ui + Tailwind component'leri tek prompt'la. Hazır kütüphaneden çek, kodu direkt projene düşsün. *(100 kredi/ay, hızlı biter)*
@@ -147,6 +148,23 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
   | `git/clean` | Merge edilmiş branch'leri temizler |
   | `update-docs` | Kod değişince dokümanları günceller |
   | `plugin-audit` | Skill/plugin dizinine 8 fazlı denetim |
+
+  </details>
+
+- **[Google Skills](https://github.com/google/skills)** ⭐ 22k `Skill`: Google'ın resmi 184 skill'i: Cloud, Gemini, Analytics, Ads, Firebase, Sign in with Google. Hepsini kurma, oturum şişer; 5'i kurulu, gerisi lazım olunca tek komutla gelir.
+
+  <details>
+  <summary>Kurulu 5 skill + kalanı nasıl eklenir?</summary>
+
+  | Skill | Ne yapar |
+  |-------|----------|
+  | `finding-google-skills` | Lazım olan Google skill'ini katalogdan bulup getirir; kalan 179'un kapısı |
+  | `google-analytics-data-api-basics` | GA4 raporları: aktif kullanıcı, sayfa görüntüleme, şehir, tarih |
+  | `google-analytics-admin-api-basics` | GA hesap/mülk ayarları, veri akışı, dönüşüm olayları |
+  | `sign-in-with-google-web` | Google ile giriş + One Tap; Next.js, token doğrulama, CSP |
+  | `gemini-api` | Gemini API (Vertex AI) ile multimodal, araç, önbellek, batch |
+
+  Kalanı: `npx skills add google/skills -g -a claude-code -y --skill <ad>`
 
   </details>
 
