@@ -215,6 +215,12 @@
       "description": "Google'ın resmi 184 skill'i. Kurulu: finding-google-skills, google-analytics-data-api-basics, google-analytics-admin-api-basics, sign-in-with-google-web, gemini-api. Gerisi lazım olunca.",
       "link": "https://github.com/google/skills",
       "install": "npx skills add google/skills -g -a claude-code -y --skill finding-google-skills gemini-api google-analytics-data-api-basics google-analytics-admin-api-basics sign-in-with-google-web"
+    },
+    "graphify": {
+      "type": "skill+mcp",
+      "description": "Kod tabanı + doküman + SQL şeması + PDF'i sorgulanabilir bilgi grafiğine çevirir (/graphify). Henüz kurulmadı; lazım olunca.",
+      "link": "https://github.com/Graphify-Labs/graphify",
+      "install": "uv tool install graphifyy && graphify install"
     }
   },
   "Claude İçi İşlevsel": {

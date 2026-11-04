@@ -129,6 +129,7 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
   </details>
 
+- **[graphify](https://github.com/Graphify-Labs/graphify)** ⭐ 142k `Skill` `MCP`: `/graphify` yaz, kod tabanı, dokümanlar, SQL şemaları ve PDF'ler sorgulanabilir bilgi grafiğine dönüşsün; grep yerine soru sor. Yerel AST, vektör veritabanı yok. *(Ücretsiz, henüz kurulmadı; büyük kod tabanında lazım olursa)*
 - **[context7](https://github.com/upstash/context7)** ⭐ 63k `MCP`: Eskimiş API bilgisine son. Kütüphanenin bugünkü dokümanını anında çeker, halüsinasyon kodu bitirir. *(Ücretsiz)*
 - **[github](https://github.com/github/github-mcp-server)** ⭐ 34k `MCP`: Repo, issue ve PR'lar Claude'un elinde. Tarayıcıya geçmeden review, merge, triage. *(Ücretsiz)*
 
