@@ -118,7 +118,7 @@
     },
     "boardui": {
       "type": "component+mcp",
-      "description": "Yapay zekâ ürünleri ve dashboard'lar için 69 ücretsiz React bileşeni (React Aria + Tailwind v4). Proje bazlı; henüz kurulmadı.",
+      "description": "Yapay zekâ ürünleri ve dashboard'lar için 69 ücretsiz React bileşeni (React Aria + Tailwind v4). Proje bazlı; VisaPapers shadcn kullandığı için değil, ileride başka projede.",
       "link": "https://github.com/BoardUI/boardui",
       "install": "Projede: npx boardui@latest add <bileşen>"
     }

@@ -101,7 +101,7 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
 - **[ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)** ⭐ 135k `Plugin`: Cebindeki tasarım ajansı. 84 stil, 192 palet, 74 font eşleşmesi; "AI yaptı" belli olmayan arayüzler.
 - **[awesome-design-systems](https://github.com/alexpate/awesome-design-systems)** ⭐ 26k `Skill`: Dünyanın en iyi tasarım sistemleri tek yerde; ilham ve referans.
-- **[BoardUI](https://github.com/BoardUI/boardui)** ⭐ 972 `Component` `MCP`: Yapay zekâ ürünleri ve dashboard'lar için 69 ücretsiz React bileşeni: chat, agent log, composer, tablo, takvim, bildirim merkezi. Kaynak kod olarak projeye kopyalanır. React Aria + Tailwind v4. *(Proje bazlı, henüz kurulmadı)*
+- **[BoardUI](https://github.com/BoardUI/boardui)** ⭐ 972 `Component` `MCP`: Yapay zekâ ürünleri ve dashboard'lar için 69 ücretsiz React bileşeni: chat, agent log, composer, tablo, takvim, bildirim merkezi. Kaynak kod olarak projeye kopyalanır. React Aria + Tailwind v4. *(Proje bazlı; VisaPapers shadcn kullandığı için değil, başka projede)*
 - **[nanobanana](https://github.com/YCSE/nanobanana-mcp)** ⭐ 31 `MCP`: Gemini'nin görsel motoru terminalinde. Logo, mockup, asset üret ya da mevcut görseli düzenle. *(Flash ücretsiz kotada)*
 - **[stitch](https://stitch.withgoogle.com/docs/mcp/setup)** `MCP`: Bir cümle yaz, Google komple ekranı çizsin. Figma'yı açmadan tasarım sistemi ve varyantlar hazır. *(Ücretsiz, ~350 üretim/ay)*
 - **[21st](https://21st.dev)** `MCP`: shadcn/ui + Tailwind component'leri tek prompt'la. Hazır kütüphaneden çek, kodu direkt projene düşsün. *(100 kredi/ay, hızlı biter)*
