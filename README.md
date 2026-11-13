@@ -109,6 +109,12 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
 ## 🛠️ Geliştirme & Kod Kalitesi
 
+- **[php-lsp](https://github.com/anthropics/claude-plugins-official)** `Plugin`: Laravel/PHP kodunda tanıma ve kullanım yerlerine anında git. *(Ücretsiz, `npm i -g intelephense`)*
+- **[typescript-lsp](https://github.com/anthropics/claude-plugins-official)** `Plugin`: TS/JS projelerde aynı kod zekâsı. *(Ücretsiz, `npm i -g typescript typescript-language-server`)*
+- **[security-guidance](https://github.com/anthropics/claude-plugins-official)** `Plugin`: Kod yazılırken güvenlik açığı uyarısı; ödeme ve kimlik kodunda erken yakalar. *(Ücretsiz)*
+- **[pr-review-toolkit](https://github.com/anthropics/claude-plugins-official)** `Plugin`: PR öncesi yorum, test, hata yönetimi ve tip incelemesi yapan ajanlar. *(Ücretsiz)*
+- **[shopify-ai-toolkit](https://github.com/anthropics/claude-plugins-official)** `Plugin`: Shopify resmi 18 skill; tema, app ve ödeme tarafı. *(Ücretsiz)*
+- **[frontend-design](https://github.com/anthropics/claude-plugins-official)** `Plugin`: Şablon gibi durmayan özgün arayüz rehberi. *(Ücretsiz)*
 - **[superpowers](https://github.com/obra/superpowers)** ⭐ 298k `Plugin`: Claude'a kıdemli mühendis disiplini aşılar. Brainstorm, plan, TDD, sistematik debug; rastgele kod yazmaya son.
 - **[REA](https://github.com/morluto/rea)** ⭐ 253k `MCP` `Skill`: Bir uygulamada beğendiğin özelliği gör, kaynak kodu olmadan nasıl çalıştığını binary seviyesine kadar çöz, kanıtıyla kendi projene uyarla. Native, Electron/JS, .NET ve web. *(MIT, ücretsiz)*
 - **[markitdown](https://github.com/microsoft/markitdown)** ⭐ 190k `MCP`: PDF, Word, Excel, HTML ne verirsen temiz Markdown'a çevirir. Belge okutmanın en kısa yolu. *(Ücretsiz)*

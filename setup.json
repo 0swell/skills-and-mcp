@@ -124,6 +124,36 @@
     }
   },
   "Geliştirme & Kod Kalitesi": {
+    "php-lsp": {
+      "type": "plugin",
+      "description": "PHP dil sunucusu (Intelephense): Laravel kodunda tanım/kullanım bulma. Gerekli: npm i -g intelephense",
+      "link": "https://github.com/anthropics/claude-plugins-official"
+    },
+    "typescript-lsp": {
+      "type": "plugin",
+      "description": "TypeScript/JS dil sunucusu. Gerekli: npm i -g typescript typescript-language-server",
+      "link": "https://github.com/anthropics/claude-plugins-official"
+    },
+    "security-guidance": {
+      "type": "plugin",
+      "description": "Claude kod yazarken güvenlik uyarısı (ödeme, kimlik, SQL).",
+      "link": "https://github.com/anthropics/claude-plugins-official"
+    },
+    "pr-review-toolkit": {
+      "type": "plugin",
+      "description": "PR inceleme ajanları: yorum, test, hata yönetimi, tip kontrolü.",
+      "link": "https://github.com/anthropics/claude-plugins-official"
+    },
+    "shopify-ai-toolkit": {
+      "type": "plugin",
+      "description": "Shopify resmi 18 geliştirme skill'i (tema, app, ödeme araştırması).",
+      "link": "https://github.com/anthropics/claude-plugins-official"
+    },
+    "frontend-design": {
+      "type": "plugin",
+      "description": "Arayüz işlerinde özgün tasarım rehberi (Anthropic resmi).",
+      "link": "https://github.com/anthropics/claude-plugins-official"
+    },
     "superpowers": {
       "type": "plugin",
       "description": "Claude'a kıdemli mühendis disiplini: brainstorm, plan, TDD, sistematik debug.",
