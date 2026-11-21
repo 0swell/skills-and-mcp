@@ -359,6 +359,12 @@
       "type": "repo",
       "description": "On-device sesle yazdırma uygulaması (macOS); Windows sürümü bekleniyor.",
       "link": "https://github.com/altic-dev/FluidVoice"
+    },
+    "sesli-oku": {
+      "type": "skill",
+      "description": "PDF/metnin istenen kısımlarını Türkçe sesle okur; dur/devam destekli (edge-tts, ücretsiz, anahtarsız).",
+      "link": "https://github.com/0swell/skills-and-mcp/tree/main/skills/sesli-oku",
+      "install": "skills/sesli-oku -> ~/.claude/skills/sesli-oku/ kopyala, sonra: python -m venv ~/.claude/skills/sesli-oku/.venv && ~/.claude/skills/sesli-oku/.venv/Scripts/python -m pip install edge-tts"
     }
   }
 }
