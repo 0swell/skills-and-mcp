@@ -118,7 +118,6 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 - **[superpowers](https://github.com/obra/superpowers)** ⭐ 298k `Plugin`: Claude'a kıdemli mühendis disiplini aşılar. Brainstorm, plan, TDD, sistematik debug; rastgele kod yazmaya son.
 - **[REA](https://github.com/morluto/rea)** ⭐ 253k `MCP` `Skill`: Bir uygulamada beğendiğin özelliği gör, kaynak kodu olmadan nasıl çalıştığını binary seviyesine kadar çöz, kanıtıyla kendi projene uyarla. Native, Electron/JS, .NET ve web. *(MIT, ücretsiz)*
 - **[markitdown](https://github.com/microsoft/markitdown)** ⭐ 190k `MCP`: PDF, Word, Excel, HTML ne verirsen temiz Markdown'a çevirir. Belge okutmanın en kısa yolu. *(Ücretsiz)*
-- **[sesli-oku](skills/sesli-oku)** `Skill`: PDF'in ya da metnin istenen kısımlarını Türkçe doğal sesle (Emel/Ahmet) okur; "dur" deyince durur, "devam" deyince kaldığı yerden sürer. edge-tts tabanlı. *(Ücretsiz, anahtarsız)*
 
 - **[Ponytail](https://github.com/DietrichGebert/ponytail)** ⭐ 161k `Skill`: Odadaki en tembel kıdemli dev gibi düşünür. En iyi kod hiç yazılmayan koddur; YAGNI, stdlib, tek satır.
 
@@ -251,7 +250,7 @@ Uzun, sıkıcı, çok token yakacak işleri ücretsiz modellere devretmek için.
 
 ## Maliyet Notları
 
-- **Ücretsiz kullanılanlar:** stitch (350 üretim/ay), nanobanana (Flash modeli), context7, markitdown, sesli-oku (edge-tts), github, remotion, omniroute, headroom, geo-optimizer, gsc
+- **Ücretsiz kullanılanlar:** stitch (350 üretim/ay), nanobanana (Flash modeli), context7, markitdown, github, remotion, omniroute, headroom, geo-optimizer, gsc
 - **21st** free planında 100 kredi/ay veriyor — birkaç component üretimine denk geliyor, hızlı tükeniyor.
 - **meta-ads** Pipeboard'un free planıyla çalışıyor; ilk kullanımda OAuth ile Meta hesabı bağlanıyor.
 - **openseo** DataForSEO API'si üzerinden çalışır, istek başına ücret; hosted sürüm %28 ekler. Kullanmadan önce bütçe kararı ver.
