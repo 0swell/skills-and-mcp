@@ -135,7 +135,7 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
   </details>
 
-- **[graphify](https://github.com/Graphify-Labs/graphify)** ⭐ 142k `Skill` `MCP`: `/graphify` yaz, kod tabanı, dokümanlar, SQL şemaları ve PDF'ler sorgulanabilir bilgi grafiğine dönüşsün; grep yerine soru sor. Yerel AST, vektör veritabanı yok. *(Ücretsiz, henüz kurulmadı; büyük kod tabanında lazım olursa)*
+- **[graphify](https://github.com/Graphify-Labs/graphify)** ⭐ 142k `Skill` `MCP`: `/graphify` yaz, kod tabanı, dokümanlar, SQL şemaları ve PDF'ler sorgulanabilir bilgi grafiğine dönüşsün; grep yerine soru sor. Yerel AST, vektör veritabanı yok. *(Ücretsiz, kurulu)*
 - **[context7](https://github.com/upstash/context7)** ⭐ 63k `MCP`: Eskimiş API bilgisine son. Kütüphanenin bugünkü dokümanını anında çeker, halüsinasyon kodu bitirir. *(Ücretsiz)*
 - **[github](https://github.com/github/github-mcp-server)** ⭐ 34k `MCP`: Repo, issue ve PR'lar Claude'un elinde. Tarayıcıya geçmeden review, merge, triage. *(Ücretsiz)*
 
@@ -197,6 +197,8 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 
 - **[headroom](https://github.com/headroomlabs-ai/headroom)** ⭐ 75k `MCP`: Tool çıktısını, log'ları, JSON'u LLM'e gitmeden sıkıştırır. Aynı cevap, %20-95 daha az token. *(Ücretsiz)*
 
+- **[CodeBurn](https://github.com/getagentseal/codeburn)** ⭐ 12k `CLI` `Plugin`: Token ve maliyetin nereye gittiğini gösterir; görev, araç, model ve proje bazında. Terminalde `codeburn today` / `codeburn month` / `codeburn report`, Claude içinde `/codeburn:cost`. Oturum dosyalarını yerelde okur. *(MIT, ücretsiz)*
+
 ### Prompt & Agent
 
 - **[agent-sdk-dev](https://github.com/anthropics/claude-plugins-official)** ⭐ 38k `Plugin`: Kendi Claude agent'ını dakikalar içinde ayağa kaldır ve best practice'e göre doğrulat.
@@ -250,7 +252,7 @@ Uzun, sıkıcı, çok token yakacak işleri ücretsiz modellere devretmek için.
 
 ## Maliyet Notları
 
-- **Ücretsiz kullanılanlar:** stitch (350 üretim/ay), nanobanana (Flash modeli), context7, markitdown, github, remotion, omniroute, headroom, geo-optimizer, gsc
+- **Ücretsiz kullanılanlar:** stitch (350 üretim/ay), nanobanana (Flash modeli), context7, markitdown, github, remotion, omniroute, headroom, codeburn, geo-optimizer, gsc
 - **21st** free planında 100 kredi/ay veriyor — birkaç component üretimine denk geliyor, hızlı tükeniyor.
 - **meta-ads** Pipeboard'un free planıyla çalışıyor; ilk kullanımda OAuth ile Meta hesabı bağlanıyor.
 - **openseo** DataForSEO API'si üzerinden çalışır, istek başına ücret; hosted sürüm %28 ekler. Kullanmadan önce bütçe kararı ver.

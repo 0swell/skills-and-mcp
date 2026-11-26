@@ -248,7 +248,7 @@
     },
     "graphify": {
       "type": "skill+mcp",
-      "description": "Kod tabanı + doküman + SQL şeması + PDF'i sorgulanabilir bilgi grafiğine çevirir (/graphify). Henüz kurulmadı; lazım olunca.",
+      "description": "Kod tabanı + doküman + SQL şeması + PDF'i sorgulanabilir bilgi grafiğine çevirir (/graphify). Kurulu, kullanıcı düzeyinde (bütün oturumlar + CLI).",
       "link": "https://github.com/Graphify-Labs/graphify",
       "install": "uv tool install graphifyy && graphify install"
     }
@@ -266,6 +266,12 @@
         "description": "Tool çıktısı, log ve JSON'u LLM'e gitmeden sıkıştırır; aynı cevap, %20-95 daha az token.",
         "link": "https://github.com/headroomlabs-ai/headroom",
         "install": "uv tool install --python 3.13 \"headroom-ai[all]\" && headroom mcp install --agent claude"
+      },
+      "codeburn": {
+        "type": "cli+plugin",
+        "description": "Token ve maliyetin nereye gittiğini gösterir: görev, araç, model ve proje bazında. CLI (codeburn today / month / report) + Claude Code eklentisi (/codeburn:cost).",
+        "link": "https://github.com/getagentseal/codeburn",
+        "install": "npm install -g codeburn && claude plugin marketplace add getagentseal/codeburn && claude plugin install codeburn@codeburn --scope user"
       }
     },
     "Prompt & Agent": {
