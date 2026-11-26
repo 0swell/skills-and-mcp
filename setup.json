@@ -121,6 +121,30 @@
       "description": "Yapay zekâ ürünleri ve dashboard'lar için 69 ücretsiz React bileşeni (React Aria + Tailwind v4). Proje bazlı; VisaPapers shadcn kullandığı için değil, ileride başka projede.",
       "link": "https://github.com/BoardUI/boardui",
       "install": "Projede: npx boardui@latest add <bileşen>"
+    },
+    "anthropic-example-skills": {
+      "type": "plugin",
+      "description": "Anthropic resmi skilleri: canvas-design, theme-factory, web-artifacts-builder, webapp-testing, brand-guidelines, algorithmic-art, frontend-design, mcp-builder, skill-creator.",
+      "link": "https://github.com/anthropics/skills",
+      "install": "claude plugin marketplace add anthropics/skills && claude plugin install example-skills@anthropic-agent-skills --scope user"
+    },
+    "playwright": {
+      "type": "mcp",
+      "description": "Microsoft resmi: gerçek tarayıcıyı açıp arayüzü test eder, tıklar, form doldurur, ekran görüntüsü alır.",
+      "link": "https://github.com/microsoft/playwright-mcp",
+      "install": "claude mcp add --scope user playwright -- npx -y @playwright/mcp@latest"
+    },
+    "shadcn": {
+      "type": "mcp",
+      "description": "shadcn/ui bileşenlerini resmi kayıttan arar ve projeye ekler; kotası yok (21st'e ücretsiz alternatif).",
+      "link": "https://ui.shadcn.com/docs/mcp",
+      "install": "claude mcp add --scope user shadcn -- npx -y shadcn@latest mcp"
+    },
+    "claude-desktop-yerlesik": {
+      "type": "built-in",
+      "description": "Claude desktop uygulamasıyla gelen tasarım skilleri: dataviz (grafik / dashboard), artifact-design (paylaşılabilir sayfa), artifact-diagramming (diyagram). Kurulum yok, sadece desktop oturumlarında.",
+      "link": "https://claude.ai/download",
+      "install": "Kurulum gerekmez (Claude desktop)"
     }
   },
   "Geliştirme & Kod Kalitesi": {
