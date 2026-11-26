@@ -103,6 +103,10 @@ Tüm kayıtlar makine tarafından okunabilir şekilde [`setup.json`](setup.json)
 - **[awesome-design-systems](https://github.com/alexpate/awesome-design-systems)** ⭐ 26k `Skill`: Dünyanın en iyi tasarım sistemleri tek yerde; ilham ve referans.
 - **[BoardUI](https://github.com/BoardUI/boardui)** ⭐ 972 `Component` `MCP`: Yapay zekâ ürünleri ve dashboard'lar için 69 ücretsiz React bileşeni: chat, agent log, composer, tablo, takvim, bildirim merkezi. Kaynak kod olarak projeye kopyalanır. React Aria + Tailwind v4. *(Proje bazlı; VisaPapers shadcn kullandığı için değil, başka projede)*
 - **[Anthropic resmi skilleri](https://github.com/anthropics/skills)** ⭐ 200k `Plugin`: `canvas-design` (poster / görsel), `theme-factory` (hazır tema), `web-artifacts-builder` (React + shadcn sayfa), `webapp-testing` (Playwright ile test), `brand-guidelines`, `algorithmic-art`. *(Ücretsiz, kurulu)*
+- **[Belge skilleri](https://github.com/anthropics/skills)** ⭐ 200k `Plugin`: Anthropic resmi `docx`, `pdf`, `pptx`, `xlsx`. Rapor, PDF ve Excel işleri CLI'da da çalışır. *(Ücretsiz, kurulu)*
+- **[Expo](https://github.com/expo/skills)** `Plugin`: Expo'nun resmi skilleri; kiracı uygulamasını kurma, SDK yükseltme, hata ayıklama, EAS ile mağaza sürümü. *(Ücretsiz, kurulu)*
+- **Liquid LSP** `Plugin`: Shopify Liquid dil sunucusu; Blend-r-Theme'de tanım / kullanım bulma, hata gösterme. *(Ücretsiz, kurulu)*
+- **claude-md-management** `Plugin`: CLAUDE.md dosyalarını denetler ve kısaltır; her istekte giden metin küçülür, kullanım sınırı korunur. *(Ücretsiz, kurulu)*
 - **[Playwright MCP](https://github.com/microsoft/playwright-mcp)** ⭐ 40k `MCP`: Gerçek tarayıcıyı açar; arayüzü tıklar, form doldurur, ekran görüntüsü alır, tasarımı gözle kontrol eder. *(Microsoft, ücretsiz, kurulu)*
 - **[shadcn MCP](https://ui.shadcn.com/docs/mcp)** ⭐ 129k `MCP`: shadcn/ui bileşenlerini resmi kayıttan arar ve projeye ekler. 21st'in kotasız alternatifi. *(Ücretsiz, kurulu)*
 - **Claude desktop yerleşik** `Built-in`: `dataviz` (grafik, dashboard, renk paleti), `artifact-design` (paylaşılabilir sayfa tasarımı), `artifact-diagramming` (diyagram). Kurulum yok, sadece desktop oturumlarında çalışır.

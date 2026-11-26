@@ -275,6 +275,30 @@
       "description": "Kod tabanı + doküman + SQL şeması + PDF'i sorgulanabilir bilgi grafiğine çevirir (/graphify). Kurulu, kullanıcı düzeyinde (bütün oturumlar + CLI).",
       "link": "https://github.com/Graphify-Labs/graphify",
       "install": "uv tool install graphifyy && graphify install"
+    },
+    "document-skills": {
+      "type": "plugin",
+      "description": "Anthropic resmi belge skilleri: docx, pdf, pptx, xlsx. Rapor, PDF ve Excel işleri CLI'da da çalışır.",
+      "link": "https://github.com/anthropics/skills",
+      "install": "claude plugin install document-skills@anthropic-agent-skills --scope user"
+    },
+    "expo": {
+      "type": "plugin",
+      "description": "Expo resmi skilleri: React Native / Expo uygulamasını kurma, yükseltme, hata ayıklama, mağaza sürümü (kiracı uygulaması).",
+      "link": "https://github.com/expo/skills",
+      "install": "claude plugin install expo@claude-plugins-official --scope user"
+    },
+    "liquid-lsp": {
+      "type": "plugin",
+      "description": "Shopify Liquid dil sunucusu: tema kodunda tanım / kullanım bulma ve hata gösterme (Blend-r-Theme).",
+      "link": "https://shopify.dev/docs/storefronts/themes/tools/cli",
+      "install": "claude plugin install liquid-lsp@claude-plugins-official --scope user"
+    },
+    "claude-md-management": {
+      "type": "plugin",
+      "description": "CLAUDE.md dosyalarını denetler, kısaltır, oturumdan öğrenileni ekler; her istekte giden metni küçük tutar.",
+      "link": "https://github.com/anthropics/claude-plugins-official",
+      "install": "claude plugin install claude-md-management@claude-plugins-official --scope user"
     }
   },
   "Claude İçi İşlevsel": {
